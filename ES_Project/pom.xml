@@ -4,4 +4,12 @@
   <artifactId>ES_Project</artifactId>
   
   <version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+    		<groupId>org.mnode.ical4j</groupId>
+    		<artifactId>ical4j</artifactId>
+    		<version>4.0.0-beta2</version>
+		</dependency>
+	</dependencies>
+
 </project>
