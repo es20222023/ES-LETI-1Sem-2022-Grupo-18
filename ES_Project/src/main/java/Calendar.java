@@ -354,7 +354,7 @@ public abstract class Calendar extends JComponent {
             g2.setFont(origFont.deriveFont(fontSize));
 
             // Draw the event's text
-            g2.drawString(event.getText(), (int) x + 5, (int) y0 + 23);
+            drawString(g2, event.getText(), (int) x + 5, (int) y0 + 23);
 
             // Reset font
             g2.setFont(origFont);
@@ -392,5 +392,11 @@ public abstract class Calendar extends JComponent {
     public void setEvents(ArrayList<CalendarEvent> events) {
         this.events = events;
         repaint();
+    }
+    
+    private void drawString(Graphics g, String text, int x, int y) {
+        int lineHeight = g.getFontMetrics().getHeight();
+        for (String line : text.split("\n"))
+            g.drawString(line, x, y += lineHeight);
     }
 }

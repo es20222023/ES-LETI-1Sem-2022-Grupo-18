@@ -41,17 +41,14 @@ public class WeekCalendarTest {
 //		
 //		// CalendarEvent(LocalDate.of(toDate(x.getDtstart()).getYear(),) null, null,
 //		// null)));
-		int i = 0;
 		for (Event e : eventss) {
-			i++;
 			LocalDateTime StartDate = toDate(e.getDtstart());
 			LocalDateTime EndDate = toDate(e.getDtend());
 
 			if (!(StartDate.getYear() == 0 || StartDate.getMonthValue() == 0 || StartDate.getDayOfMonth() == 0 ||
 					EndDate.getYear() == 0 || EndDate.getMonthValue() == 0 || EndDate.getDayOfMonth() == 0)) {
 				
-				
-					events.add(new CalendarEvent(StartDate.toLocalDate(), StartDate.toLocalTime(), EndDate.toLocalTime(), "123"));
+					events.add(new CalendarEvent(StartDate.toLocalDate(), StartDate.toLocalTime(), EndDate.toLocalTime(), cutAfterTrace(insertPeriodically(e.getSummary(),  "\n", 15) )));
 				
 			}
 		}
@@ -132,4 +129,11 @@ public class WeekCalendarTest {
 		    }
 		    return builder.toString();
 		}
+	
+	public static String cutAfterTrace(String str) {
+		int index = str.indexOf("-");
+		if(index >= 0)
+			str = str.substring(0, index);
+		return str;
+	}
 }
