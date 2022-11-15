@@ -17,13 +17,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class FillCalendar {
 	
-	public static ArrayList<Event> returnEventList() throws ParseException {
+	public static ArrayList<Event> returnEventList(String fileName) throws ParseException {
 
 		final ObjectMapper objectMapper = new ObjectMapper();
 
 		ArrayList<Event> eventList = null;
 		try {
-			eventList = objectMapper.readValue(new File("cal.json"), new TypeReference<ArrayList<Event>>() {
+			eventList = objectMapper.readValue(new File(fileName), new TypeReference<ArrayList<Event>>() {
 			});
 		} catch (JsonMappingException e) {
 			// TODO Auto-generated catch block

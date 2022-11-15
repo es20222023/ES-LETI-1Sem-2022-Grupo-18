@@ -61,6 +61,10 @@ public class CalendarEvent {
     public String toString() {
         return getDate() + " " + getStart() + "-" + getEnd() + ". " + getText();
     }
+    
+    public void setColor(Color color) {
+    	this.color = color;
+    }
 
     public Color getColor() {
         return color;
