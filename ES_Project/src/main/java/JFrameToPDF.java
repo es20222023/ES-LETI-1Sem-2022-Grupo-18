@@ -17,6 +17,7 @@ public class JFrameToPDF {
 
 	public static void JFrameToPDF() throws IOException, DocumentException {
 
+		//Criação da img
 		JFrame frame = new JFrame();
 		frame.setSize(200, 200);
 		frame.setBackground(Color.PINK);
@@ -25,6 +26,8 @@ public class JFrameToPDF {
 		frame.printAll(graph2d);
 		graph2d.dispose();
 		ImageIO.write(image, "png", new File("calendarImage.png"));
+		
+		//Criação e abertura/fecho do documento
 		Document pdfDocument1 = new Document(PageSize.A4.rotate(), 0, frame.getHeight(), 0, frame.getWidth());
 		PdfWriter.getInstance(pdfDocument1, new FileOutputStream("HelloPdf.pdf"));
 		pdfDocument1.open();
