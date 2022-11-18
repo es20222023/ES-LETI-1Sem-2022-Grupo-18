@@ -1,10 +1,14 @@
 import javax.swing.*;
+
+import com.itextpdf.text.DocumentException;
+
 import java.awt.*;
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
 
 public class WeekCalendarTest {
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException, IOException, DocumentException {
 
 		ArrayList<User> users = new ArrayList<User>();
 		User andre = new User("andre.json", Color.GRAY);
@@ -60,6 +64,8 @@ public class WeekCalendarTest {
 		frm.setSize(1000, 900);
 		frm.setVisible(true);
 		frm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		
+		JFrameToPDF.JFrameToPDF(frm);
 	}
 
 }
