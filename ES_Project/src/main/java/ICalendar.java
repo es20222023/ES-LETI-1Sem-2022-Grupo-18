@@ -1,3 +1,4 @@
+import java.io.FileWriter;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -35,7 +36,10 @@ public class ICalendar {
 	      ObjectMapper mapper = new ObjectMapper();
 	      mapper.registerModule(module);
 	      json = mapper.writeValueAsString(calendar);
-
+	      
+	      FileWriter file = new FileWriter("output.json");
+	      file.write(json);
+	      file.close();
 	    }  
 	    catch(Exception e)  
 	    {  
