@@ -11,8 +11,8 @@ public class WeekCalendarTest {
 	public static void main(String[] args) throws ParseException, IOException, DocumentException {
 
 		ArrayList<User> users = new ArrayList<User>();
-		User andre = new User("andre.json", Color.GRAY);
-		User madalena = new User("madalena.json", Color.PINK);
+		User andre = new User("André", "andre.json", Color.GRAY);
+		User madalena = new User("Madalena", "madalena.json", Color.PINK);
 		users.add(andre);
 		users.add(madalena);
 		ArrayList<CalendarEvent> events = new ArrayList<>();
@@ -46,9 +46,22 @@ public class WeekCalendarTest {
 		prevMonthBtn.addActionListener(e -> cal.prevMonth());
 
 		JButton toPDFButton = new JButton("Generate PDF");
-
+		toPDFButton.addActionListener(e -> {
+			try {
+				JFrameToPDF.JFrameToPDF(frm);
+			} catch (IOException | DocumentException e1) {
+				e1.printStackTrace();
+			}
+		});
+		
 		JPanel PDFcontrol = new JPanel();
 		PDFcontrol.add(toPDFButton);
+		
+		JPanel checkBoxes = new JPanel();
+		checkBoxes.setLayout(new BoxLayout(checkBoxes, BoxLayout.Y_AXIS));
+		for(User u: users) {
+			checkBoxes.add(new JCheckBox(u.getUserName()));
+		}
 
 		JPanel weekControls = new JPanel();
 		weekControls.add(prevMonthBtn);
@@ -59,13 +72,13 @@ public class WeekCalendarTest {
 
 		frm.add(weekControls, BorderLayout.NORTH);
 		frm.add(PDFcontrol, BorderLayout.SOUTH);
+		frm.add(checkBoxes, BorderLayout.WEST);
 
 		frm.add(cal, BorderLayout.CENTER);
-		frm.setSize(1000, 900);
+		frm.setSize(1500, 800);
 		frm.setVisible(true);
 		frm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
-		JFrameToPDF.JFrameToPDF(frm);
 	}
 
 }

@@ -6,12 +6,14 @@ import java.util.ArrayList;
 
 public class User {
 
+	private String userName;
 	private String fileName;
 	private Color colorPreference;
 
-	public User(String fileName, Color colorPreference) {
+	public User(String userName, String fileName, Color colorPreference) {
 		this.fileName = fileName;
 		this.colorPreference = colorPreference;
+		this.userName = userName;
 	}
 
 	public String getFileName() {
@@ -81,6 +83,10 @@ public class User {
 		if (index >= 0)
 			str = str.substring(0, index);
 		return str;
+	}
+	
+	public String getUserName() {
+		return this.userName;
 	}
 
 }
