@@ -62,68 +62,7 @@ public class MongoDB {
         	   reader.close();
 
            }
-       
-       
-//        BasicDBObject document = new BasicDBObject();
-//        document.put("database", "dineshonjavaDB");
-//        document.put("table", "employees");
-//         
-//        BasicDBObject documentDetail = new BasicDBObject();
-//        documentDetail.put("empId", "10001");
-//        documentDetail.put("empName", "Dinesh");
-//        documentDetail.put("salary", "70000");
-//         
-//        document.put("detail", documentDetail);
-         
-        //collection.insert(document);
-        
-//        try {
-//
-//            //drop previous import
-//            //collection.drop();
-//
-//            //Bulk Approach:
-//            int count = 0;
-//            int batch = 100;
-//            List<InsertOneModel<Document>> docs = new ArrayList<>();
-//
-//            try (BufferedReader br = new BufferedReader(new FileReader("madalena.json"))) {
-//                String line;
-//                while ((line = br.readLine()) != null) {
-//                    docs.add(new InsertOneModel<>(Document.parse(line)));
-//                    count++;
-//                    if (count == batch) {
-//                        collection.bulkWrite(docs, new BulkWriteOptions().ordered(false));
-//                        docs.clear();
-//                        count = 0;
-//                    }
-//                }
-//            }
-//
-//            if (count > 0) {
-//                com.mongodb.bulk.BulkWriteResult bulkWriteResult=  collection.bulkWrite(docs, new BulkWriteOptions().ordered(false));
-//                System.out.println("Inserted" + bulkWriteResult);
-//            }
-//
-//        } catch (MongoWriteException e) {
-//            System.out.println("Error");
-//        }
-        
-        
-//        BufferedWriter writer = new BufferedWriter(new FileWriter("madalena.json"));
-//
-//        try {
-//            JsonWriterSettings settings = JsonWriterSettings.builder().outputMode(JsonMode.EXTENDED).build();
-//            for (Document doc : collection.find()) {
-//                writer.write(doc.toJson(settings));
-//                writer.newLine();
-//            
-//               
-//            }
-//            writer.close();
-//        }catch (MongoWriteException e) {
-//          System.out.println("Error");
-//      }
+ 
 
         
     }
