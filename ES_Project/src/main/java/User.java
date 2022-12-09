@@ -37,7 +37,7 @@ public class User {
 			if (!(StartDate.getYear() == 0 || StartDate.getMonthValue() == 0 || StartDate.getDayOfMonth() == 0
 					|| EndDate.getYear() == 0 || EndDate.getMonthValue() == 0 || EndDate.getDayOfMonth() == 0)) {
 
-				events.add(new CalendarEvent(StartDate.toLocalDate(), StartDate.toLocalTime(), EndDate.toLocalTime(),
+				events.add(new CalendarEvent(this, StartDate.toLocalDate(), StartDate.toLocalTime(), EndDate.toLocalTime(),
 						cutAfterTrace(insertPeriodically(e.getSummary(), "\n", 15))));
 
 			}

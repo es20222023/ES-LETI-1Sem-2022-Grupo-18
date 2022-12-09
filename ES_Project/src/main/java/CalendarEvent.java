@@ -13,12 +13,14 @@ public class CalendarEvent {
     private LocalTime end;
     private String text;
     private Color color;
+    private User user;
 
-    public CalendarEvent(LocalDate date, LocalTime start, LocalTime end, String text) {
-        this(date, start, end, text, DEFAULT_COLOR);
+    public CalendarEvent(User user,LocalDate date, LocalTime start, LocalTime end, String text) {
+        this(user, date, start, end, text, DEFAULT_COLOR);
     }
 
-    public CalendarEvent(LocalDate date, LocalTime start, LocalTime end, String text, Color color) {
+    public CalendarEvent(User user,LocalDate date, LocalTime start, LocalTime end, String text, Color color) {
+    	this.user = user;
         this.date = date;
         this.start = start;
         this.end = end;
@@ -26,6 +28,9 @@ public class CalendarEvent {
         this.color = color;
     }
 
+    public User getUser() {
+    	return user;
+    }
     public LocalDate getDate() {
         return date;
     }
