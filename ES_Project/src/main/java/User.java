@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.io.IOException;
 import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -7,38 +8,38 @@ import java.util.ArrayList;
 public class User {
 
 	private String userName;
-	private String fileName;
+	private String link;
 	private Color colorPreference;
 
-	public User(String userName, String fileName, Color colorPreference) {
-		this.fileName = fileName;
+	public User(String userName, String link, Color colorPreference) {
+		this.link = link;
 		this.colorPreference = colorPreference;
 		this.userName = userName;
 	}
 
 	public String getFileName() {
-		return fileName;
+		return link;
 	}
 
 	public Color getColorPreference() {
 		return colorPreference;
 	}
 
-	public ArrayList<Event> getEventList() throws ParseException {
-		return FillCalendar.returnEventList(fileName);
+	public ArrayList<Event> getEventList() throws ParseException, IOException {
+		return FillCalendar.returnEventList(link, this.userName);
 	}
 
-	public ArrayList<CalendarEvent> getCalendarEventList() throws ParseException {
+	public ArrayList<CalendarEvent> getCalendarEventList() throws ParseException, IOException {
 		ArrayList<CalendarEvent> events = new ArrayList<CalendarEvent>();
 		for (Event e : getEventList()) {
-			LocalDateTime StartDate = toDate(e.getDtstart());
-			LocalDateTime EndDate = toDate(e.getDtend());
+			LocalDateTime StartDate = toDate(e.getDateStart());
+			LocalDateTime EndDate = toDate(e.getDateEnd());
 
 			if (!(StartDate.getYear() == 0 || StartDate.getMonthValue() == 0 || StartDate.getDayOfMonth() == 0
 					|| EndDate.getYear() == 0 || EndDate.getMonthValue() == 0 || EndDate.getDayOfMonth() == 0)) {
 
 				events.add(new CalendarEvent(this, StartDate.toLocalDate(), StartDate.toLocalTime(), EndDate.toLocalTime(),
-						cutAfterTrace(insertPeriodically(e.getSummary(), "\n", 15))));
+						cutAfterTrace(insertPeriodically(e.getName(), "\n", 34))));
 
 			}
 		}
@@ -87,6 +88,10 @@ public class User {
 	
 	public String getUserName() {
 		return this.userName;
+	}
+	
+	public String toString() {
+		return userName;
 	}
 
 }

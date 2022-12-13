@@ -14,6 +14,8 @@ public class CalendarEvent {
     private String text;
     private Color color;
     private User user;
+    private int numberOfSobreposicoes;
+    private boolean visible = true;
 
     public CalendarEvent(User user,LocalDate date, LocalTime start, LocalTime end, String text) {
         this(user, date, start, end, text, DEFAULT_COLOR);
@@ -27,7 +29,18 @@ public class CalendarEvent {
         this.text = text;
         this.color = color;
     }
+    
+    public boolean isVisible() {
+    	return visible;
+    }
+    
+    public void setVisible(boolean a) {
+    	this.visible = a;
+    }
 
+    public int getNumberOfSobreposicoes(){
+    	return numberOfSobreposicoes;
+    }
     public User getUser() {
     	return user;
     }
@@ -64,7 +77,7 @@ public class CalendarEvent {
     }
 
     public String toString() {
-        return getDate() + " " + getStart() + "-" + getEnd() + ". " + getText();
+        return getUser() + " " + getDate() + " " + getStart() + "-" + getEnd() + ". " + getText();
     }
     
     public void setColor(Color color) {

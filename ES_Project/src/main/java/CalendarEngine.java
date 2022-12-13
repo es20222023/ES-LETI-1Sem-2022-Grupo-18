@@ -1,31 +1,57 @@
 import javax.swing.*;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.itextpdf.text.DocumentException;
 
 import java.awt.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.text.Normalizer;
 import java.text.ParseException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
-public class WeekCalendarTest {
+public class CalendarEngine {
+	//List with users
 	public static ArrayList<User> users = new ArrayList<User>();
+	//List with all events
 	public static ArrayList<CalendarEvent> events = new ArrayList<>();
+	//Calendar
 	public static WeekCalendar cal;
 
-	public static void main(String[] args) throws ParseException, IOException, DocumentException {
-
-		User andre = new User("André", "andre.json", Color.GRAY);
-		User madalena = new User("Madalena", "madalena.json", Color.PINK);
+	public void startCalendar()
+			throws ParseException, IOException, DocumentException, InvocationTargetException, InterruptedException {
+		
+		User andre = new User("André",
+				"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=ajcoa@iscte.pt&password=vdUlwNxIno1kfyt9Bb8xlmucoNeh9kpodtkz7Ar909kSBNABXxgOqYDV40KA5DbQ9KRjj55ViqbfZurzgxp8k7LIjmfQgPe5LXftA8hrDr3UzlTW9QRl6F3WVwGdSslZ ",
+				Color.GRAY);
+		User madalena = new User("Madalena",
+				"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=mmrtj@iscte.pt&password=FofNis92nl2BbmRTA9KZHS0Q8uALDoY4FUwYkbmxHI9ehgU10vflo9jHZWmH2wes3Idrkz1BcEF4JnMUTopbSvf77LNhuK9clrGAmmWQdUZiE5g6TYvjdgx0MgYkP0a8",
+				Color.PINK);
+		User alexandra = new User("Alexandra",
+				"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=ajcoa@iscte.pt&password=vdUlwNxIno1kfyt9Bb8xlmucoNeh9kpodtkz7Ar909kSBNABXxgOqYDV40KA5DbQ9KRjj55ViqbfZurzgxp8k7LIjmfQgPe5LXftA8hrDr3UzlTW9QRl6F3WVwGdSslZ",
+				Color.CYAN);
+		
 		users.add(andre);
+		users.add(alexandra);
 		users.add(madalena);
+		
+		//Creating main frame
 		JFrame frm = new JFrame();
-
+		
+		//Adding events to events list by user
 		for (User u : users) {
 			events.addAll(u.getCalendarEventList());
 		}
-
+		
+		//Create new week calendar w/ event list
 		cal = new WeekCalendar(events);
 
 		cal.addCalendarEventClickListener(e -> System.out.println(e.getCalendarEvent()));
@@ -33,7 +59,8 @@ public class WeekCalendarTest {
 			System.out.println(e.getDateTime());
 			System.out.println(Calendar.roundTime(e.getDateTime().toLocalTime(), 30));
 		});
-
+		
+		//Creating necessary buttons and associating functions
 		JButton goToTodayBtn = new JButton("Today");
 		goToTodayBtn.addActionListener(e -> cal.goToToday());
 
@@ -49,12 +76,21 @@ public class WeekCalendarTest {
 		JButton prevMonthBtn = new JButton("<<");
 		prevMonthBtn.addActionListener(e -> cal.prevMonth());
 
-		JButton toPDFButton = new JButton("Generate PDF");
+		JButton toPDFButton = new JButton("Gerar PDF");
 		toPDFButton.addActionListener(e -> {
 			try {
 				JFrameToPDF.JFrameToPDF(frm);
 			} catch (IOException | DocumentException e1) {
 				e1.printStackTrace();
+			}
+		});
+
+		JButton generateChart = new JButton("Gerar gráfico");
+		generateChart.addActionListener(e -> {
+			try {
+				avaliabilityChart();
+			} catch (InvocationTargetException | InterruptedException e2) {
+				e2.printStackTrace();
 			}
 		});
 
@@ -64,6 +100,7 @@ public class WeekCalendarTest {
 		JPanel southButtons = new JPanel();
 		southButtons.add(toPDFButton);
 		southButtons.add(newEventButton);
+		southButtons.add(generateChart);
 
 		JPanel checkBoxes = new JPanel();
 		checkBoxes.setLayout(new BoxLayout(checkBoxes, BoxLayout.Y_AXIS));
@@ -78,6 +115,8 @@ public class WeekCalendarTest {
 				try {
 					checkBoxPressed((JCheckBox) c);
 				} catch (ParseException e1) {
+					e1.printStackTrace();
+				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
 			});
@@ -98,25 +137,38 @@ public class WeekCalendarTest {
 		frm.setSize(1500, 800);
 		frm.setVisible(true);
 		frm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		frm.setLocationRelativeTo(null);
+
 	}
 
-	public static void checkBoxPressed(JCheckBox jc) throws ParseException {
+	//Function that will be called if a checkbox change state
+	public void checkBoxPressed(JCheckBox cb) throws ParseException, IOException {
 		User user = null;
 		for (User u : users) {
-			if (u.getUserName().equals(jc.getText()))
+			if (cb.getText().equals(u.getUserName())) {
 				user = u;
+			}
 		}
-
-		if (!jc.isSelected()) {
-			events.removeAll(user.getCalendarEventList());
-		} else {
-			events.addAll(user.getCalendarEventList());
+		if (user != null) {
+			if (cb.isSelected()) {
+				events.addAll(user.getCalendarEventList());
+			} else {
+				ArrayList<CalendarEvent> e = new ArrayList<>();
+				for (CalendarEvent ce : events) {
+					if (ce.getUser().getUserName().equals(user.getUserName())) {
+						e.add(ce);
+					}
+				}
+				for (CalendarEvent ce : e) {
+					events.remove(ce);
+				}
+			}
 		}
-
 		cal.repaint();
 	}
 
-	public static void scheduleEvent() {
+	//Funtion to schedule a new event
+	public void scheduleEvent() {
 		JFrame chooseUser = new JFrame();
 		JPanel user = new JPanel();
 		JPanel buttons = new JPanel();
@@ -142,9 +194,11 @@ public class WeekCalendarTest {
 		chooseUser.add(buttons, BorderLayout.SOUTH);
 		chooseUser.setVisible(true);
 		chooseUser.setSize(400, 150);
+		chooseUser.setLocationRelativeTo(null);
 	}
 
-	public static void newEventFrame(User user) {
+	//Function that will open a new frame to give new event informations
+	public void newEventFrame(User user) {
 		String dates[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17",
 				"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" };
 		String months[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
@@ -275,12 +329,14 @@ public class WeekCalendarTest {
 		c.add(endTimeLabel);
 
 		frame.setVisible(true);
-
+		frame.setLocationRelativeTo(null);
 		submitButton.addActionListener(e -> {
 			try {
 				submitPressed(user, nameText, daysValues, monthsValues, yearsValues, startTime, endTime,
 						descriptionText, outputText, res, resadd);
 			} catch (ParseException e1) {
+				e1.printStackTrace();
+			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
 		});
@@ -288,14 +344,16 @@ public class WeekCalendarTest {
 				endTime, descriptionText, outputText, res, resadd));
 	}
 
-	public static void submitPressed(User user, JTextField nameText, JComboBox<String> day, JComboBox<String> month,
+	//Function called if "submit" button is pressed
+	public void submitPressed(User user, JTextField nameText, JComboBox<String> day, JComboBox<String> month,
 			JComboBox<String> year, JComboBox<String> startHour, JComboBox<String> endHour, JTextArea descriptionArea,
-			JTextArea output, JLabel res, JTextArea resadd) throws ParseException {
+			JTextArea output, JLabel res, JTextArea resadd) throws ParseException, IOException {
 		LocalDate date = LocalDate.of(Integer.parseInt((String) year.getSelectedItem()),
 				Integer.parseInt((String) month.getSelectedItem()), Integer.parseInt((String) day.getSelectedItem()));
 		LocalTime start = toTime((String) startHour.getSelectedItem());
 		LocalTime end = toTime((String) endHour.getSelectedItem());
-		if (!(nameText.getText() == null || descriptionArea.getText() == null || nameText.getText().equals("") || descriptionArea.getText().equals(""))) {
+		if (!(nameText.getText() == null || descriptionArea.getText() == null || nameText.getText().equals("")
+				|| descriptionArea.getText().equals(""))) {
 			if (!(start).equals(end) && !(end.compareTo(start) < 0)) {
 				String data = "Name : " + nameText.getText() + "\n";
 				String data1 = "\nData : " + date.getDayOfMonth() + "/" + date.getMonthValue() + "/" + date.getYear()
@@ -310,6 +368,7 @@ public class WeekCalendarTest {
 						user.getColorPreference());
 				if (checkAvaliability(user, event)) {
 					events.add(event);
+					addToJson(event);
 					cal.repaint();
 					res.setText("Evento Agendado Com Sucesso");
 				} else {
@@ -326,18 +385,34 @@ public class WeekCalendarTest {
 				resadd.setText("");
 				res.setText("Hora de fim tem de ser supeior à hora de inicio");
 			}
-		}else {
+		} else {
 			output.setText("");
 			resadd.setText("");
 			res.setText("Formulário incompleto");
 		}
 	}
 
-	public static void addToJson(User user, CalendarEvent ce) {
-
+	//Function to add to json file a new event
+	public void addToJson(CalendarEvent ce) throws IOException {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
+		LocalDateTime ldtStart = LocalDateTime.of(ce.getDate(), ce.getStart());
+		LocalDateTime ldtEnd = LocalDateTime.of(ce.getDate(), ce.getEnd());
+		String dateStart = ldtStart.format(formatter);
+		String dateEnd = ldtEnd.format(formatter);
+		
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		Event e = new Event(ce.getText(), dateStart, dateEnd, ce.getUser().getUserName());
+		String json = gson.toJson(e);
+		String s = ce.getUser().getUserName().toLowerCase();
+		String fileName = Normalizer.normalize(s, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "") + ".json";
+		FileWriter writer = new FileWriter(fileName, true);
+		BufferedWriter out = new BufferedWriter(writer);
+		out.write(json);
+		out.close();
 	}
 
-	public static void resetPressed(JTextField nameText, JComboBox<String> day, JComboBox<String> month,
+	//function called if "reset" button is called
+	public void resetPressed(JTextField nameText, JComboBox<String> day, JComboBox<String> month,
 			JComboBox<String> year, JComboBox<String> startHour, JComboBox<String> endHour, JTextArea descriptionArea,
 			JTextArea output, JLabel res, JTextArea resadd) {
 		String def = "";
@@ -353,7 +428,8 @@ public class WeekCalendarTest {
 		resadd.setText(def);
 	}
 
-	public static boolean checkAvaliability(User user, CalendarEvent ce) throws ParseException {
+	//Function to check if a new event can be added
+	public static boolean checkAvaliability(User user, CalendarEvent ce) throws ParseException, IOException {
 		ArrayList<CalendarEvent> userEvents = user.getCalendarEventList();
 		ArrayList<CalendarEvent> dayEvents = new ArrayList<>();
 		for (CalendarEvent e : userEvents) {
@@ -370,23 +446,27 @@ public class WeekCalendarTest {
 		return true;
 	}
 
+	//Pass String to LocalTime
 	public static LocalTime toTime(String a) {
 		LocalTime lt = LocalTime.of(untilDots(a), afterDots(a));
 		return lt;
 	}
 
+	//Get a string until ":"
 	public static int untilDots(String a) {
 		int i = a.indexOf(":");
 		String b = a.substring(0, i);
 		return Integer.parseInt(b);
 	}
 
+	//Get a string after ":"
 	public static int afterDots(String a) {
 		int i = a.indexOf(":");
 		String b = a.substring(i + 1, a.length());
 		return Integer.parseInt(b);
 	}
-
+	
+	//Passing userNames list to array
 	public static String[] userNamesToArray() {
 		String[] userNames = new String[users.size()];
 		int i = 0;
@@ -395,5 +475,46 @@ public class WeekCalendarTest {
 			i++;
 		}
 		return userNames;
+	}
+
+	//Create a new chart
+	public void avaliabilityChart() throws InvocationTargetException, InterruptedException {
+		LocalDate start = cal.getDateFromDay(cal.getStartDay());
+		LocalDate end = cal.getDateFromDay(cal.getEndDay());
+		ArrayList<CalendarEvent> inRangeEvents = new ArrayList<>();
+		for (CalendarEvent ce : events) {
+			if (ce.getDate().compareTo(start) >= 0 && ce.getDate().compareTo(end) <= 0)
+				inRangeEvents.add(ce);
+		}
+		BarChart chart = new BarChart("BarChart");
+		ArrayList<LocalDate> weekDays = new ArrayList<>();
+		for (int i = 0; i < 7; i++) {
+			weekDays.add(start.plus(i, ChronoUnit.DAYS));
+		}
+
+		int totalTimeInMinutes = (18 - 8) * 60;
+		for (User u : users) {
+			for (LocalDate ld : weekDays) {
+
+				ArrayList<CalendarEvent> userEvents = new ArrayList<>();
+				for (CalendarEvent ce : inRangeEvents) {
+					if (ce.getUser().getUserName().equals(u.getUserName()) && ce.getDate().equals(ld)) {
+						userEvents.add(ce);
+					}
+				}
+				int totalMinutes = 0;
+				for (CalendarEvent ce : userEvents) {
+					totalMinutes += ce.getStart().until(ce.getEnd(), ChronoUnit.MINUTES);
+				}
+				if (users.indexOf(u) == 1)
+					totalMinutes = totalMinutes / 2;
+				chart.addToDataSet((totalMinutes * 100) / totalTimeInMinutes, u.getUserName(),
+						ld.getDayOfMonth() + "/" + ld.getMonthValue() + "/" + ld.getYear());
+			}
+		}
+
+		chart.setSize(800, 400);
+		chart.setLocationRelativeTo(null);
+		chart.setVisible(true);
 	}
 }
