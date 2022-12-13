@@ -15,13 +15,16 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class IcsToJson {
-
+	
+	//Url
 	private URL url;
 
+	//Constructor
 	public IcsToJson(String link) throws MalformedURLException {
 		this.url = new URL(link.replace("webcal:", "https:"));
 	}
 
+	//Get json from ics file
 	public File getJson(String user) throws IOException {
 
 		Files.copy(url.openStream(), Paths.get("icsfile.txt"), REPLACE_EXISTING);
@@ -79,6 +82,7 @@ public class IcsToJson {
 		return finalFile;
 	}
 
+	//List Event from a user
 	public ArrayList<Event> listaEventos(String user) throws FileNotFoundException {
 
 		ArrayList<Event> list = new ArrayList<>();

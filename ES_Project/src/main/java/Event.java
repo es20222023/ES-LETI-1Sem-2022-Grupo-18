@@ -1,41 +1,50 @@
 
 public class Event {
+	// Event parameters
 	private String name;
 	private String dateStart;
 	private String dateEnd;
 	private String username;
 
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
+	//Constructor
 	public Event(String name, String dateStart, String dateEnd, String username) {
 		this.name = name;
 		this.dateStart = dateStart;
 		this.dateEnd = dateEnd;
 		this.username = username;
 	}
-	public Event(){
+ 
+	//Default Constructor
+	public Event() {
 	}
-	
+
+	// username getter
+	public String getUsername() {
+		return username;
+	}
+
+	// username setter
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	//name getter
 	public String getName() {
 		return name;
 	}
 
+	//dateStart getter
 	public String getDateStart() {
 		return dateStart;
 	}
 
+	//dateEnd getter
 	public String getDateEnd() {
 		return dateEnd;
 	}
 
-	public String toString()
-	{
+	//toString method
+	public String toString() {
 		return "[" + name + " " + dateStart + " " + dateEnd + " " + username + "]";
 	}
 }
