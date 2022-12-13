@@ -49,7 +49,7 @@ public class MongoDB {
 	static MongoCollection<org.bson.Document> collection = db.getCollection("week");
 
 	public static void main(String[] args) throws IOException {
-		importData("testejson.json");
+		importData("madalena.json");
 
 	}
 
@@ -63,10 +63,9 @@ public class MongoDB {
 		try {
 
 			String[] n = filename.split("\\.");
-			System.out.println("MOSTRA ISTO " + n[0]);
 
 			String json;
-			json = reader.lines().collect(Collectors.joining());
+			json = reader.lines().collect(Collectors.joining("\n"));
 
 
 			Document sampleDoc = new Document("_id", n[0]).append("name", json);
