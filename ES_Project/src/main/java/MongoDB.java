@@ -45,19 +45,16 @@ public class MongoDB {
 
 	static MongoDatabase db = client.getDatabase("schedule");
 
-	// MongoCollection<Document> collection = db.getCollection("week");
 	static MongoCollection<org.bson.Document> collection = db.getCollection("week");
 
 	public static void main(String[] args) throws IOException {
 		importData("madalena.json");
-
+		outputData("madalena");
 	}
 
-//        Document sampleDoc = new Document("_id", "3").append("name", "John Smith");
-//       collection.insertOne(sampleDoc);
 
 	public static void importData(String filename) throws IOException {
-//        String name=filename.getName();
+
 		BufferedReader reader = new BufferedReader(new FileReader(filename));
 
 		try {
@@ -96,4 +93,28 @@ public class MongoDB {
 		}
 
 	}
+	public static File outputData(String name) throws IOException {
+		FindIterable<Document> iterobj = collection.find();
+
+		// Print the documents using iterators
+		MongoCursor<Document> itr = iterobj.iterator();
+		String json=null;
+		while (itr.hasNext()) {
+			
+			Document doc = itr.next();
+			String s = doc.toString();
+
+			if (s.contains("_id=" + name)) {
+				json=s;
+				System.out.println(json);
+			} 
+		}
+		
+		FileWriter fw= new FileWriter(name+".json");
+		fw.write(json);
+		fw.close();
+		File f= new File(name+".json");
+		return f;
+	}
+	
 }
