@@ -20,6 +20,7 @@ public class BarChart extends JFrame {
 	public BarChart(String appTitle) {
 		super(appTitle);
 		// Create chart
+		
 		JFreeChart chart = ChartFactory.createBarChart("Percentagem de Ocupação diária", // Chart Title
 				"User", // Category axis
 				"Percentagem de ocupação do dia", // Value axis
