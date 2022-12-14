@@ -1,3 +1,4 @@
+import java.awt.EventQueue;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.text.ParseException;
@@ -19,7 +20,18 @@ public class Main {
 	 * @throws InterruptedException
 	 */
 	public static void main(String [] args) throws ParseException, IOException, DocumentException, InvocationTargetException, InterruptedException {
-		CalendarEngine calendar = new CalendarEngine();
-		calendar.startCalendar();
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FrameLogin frame = new FrameLogin();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+		
+		//CalendarEngine calendar = new CalendarEngine();
+		//calendar.startCalendar();
 	}
 }

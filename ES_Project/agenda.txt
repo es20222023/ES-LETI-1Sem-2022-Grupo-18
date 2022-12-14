@@ -1,17 +1,37 @@
 
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+Modulação e Codificação - Modulation and CodingUID
+20221207143000
+20221207160000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
 20230308160000
 20230308173000
  
 
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230314143000
-20230314160000
+Engenharia de Software - Software EngineeringUID
+20221215143000
+20221215160000
  
 
-Modulação e Codificação - Modulation and CodingUID
-20221103093000
-20221103110000
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230321143000
+20230321160000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20220922133000
+20220922150000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230503070000
+20230503083000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221018133000
+20221018150000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -19,9 +39,24 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221017113000
  
 
+Engenharia de Software - Software EngineeringUID
+20220913120000
+20220913133000
+ 
+
 Arquitetura de Redes - Network ArquitecturesUID
 20221215160000
 20221215173000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20220914133000
+20220914150000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20220928150000
+20220928163000
  
 
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
@@ -29,24 +64,49 @@ Sistemas de Comunicação Ótica - Optical Communication SystemsUID
 20230213160000
  
 
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221123143000
-20221123160000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230330083000
-20230330100000
- 
-
 Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230505100000
 20230505113000
  
 
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230503150000
+20230503163000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230525133000
+20230525150000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230508150000
+20230508163000
+ 
+
 Engenharia de Software - Software EngineeringUID
-20221103130000
-20221103143000
+20221020120000
+20221020133000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230314130000
+20230314143000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230316143000
+20230316160000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221019150000
+20221019163000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20221110130000
+20221110143000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -64,1064 +124,9 @@ Electrónica Programada e Processamento Digital de Sinais - Progra
 20221213160000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230523150000
-20230523163000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230207143000
-20230207160000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230509120000
-20230509133000
- 
-
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221205093000
 20221205110000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221103110000
-20221103123000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230228130000
-20230228143000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221107143000
-20221107160000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230424120000
-20230424133000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230314130000
-20230314143000
- 
-
-Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
-20221121110000
-20221121123000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20220921120000
-20220921133000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230510100000
-20230510113000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221130130000
-20221130143000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230428100000
-20230428113000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221214143000
-20221214160000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230427150000
-20230427163000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230306093000
-20230306110000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230512083000
-20230512100000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221012150000
-20221012163000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230228160000
-20230228173000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20220920150000
-20220920163000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230320160000
-20230320173000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230329133000
-20230329150000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230302143000
-20230302160000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230224143000
-20230224160000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230308110000
-20230308123000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230426100000
-20230426113000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221122143000
-20221122160000
- 
-
-Engenharia de Software - Software EngineeringUID
-20220915133000
-20220915150000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230227143000
-20230227160000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221010120000
-20221010133000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230317160000
-20230317173000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230316093000
-20230316110000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230503150000
-20230503163000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230227130000
-20230227143000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20220913133000
-20220913150000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221013133000
-20221013150000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230522120000
-20230522133000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221020150000
-20221020163000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230329070000
-20230329083000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230215160000
-20230215173000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221103103000
-20221103120000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221017120000
-20221017133000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230310143000
-20230310160000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20220920100000
-20220920113000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230427083000
-20230427100000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230313130000
-20230313143000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221027150000
-20221027163000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20220921150000
-20220921163000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221011150000
-20221011163000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221108160000
-20221108173000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20220927150000
-20220927163000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230526150000
-20230526163000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230508083000
-20230508100000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230511133000
-20230511150000
- 
-
-Engenharia de Software - Software EngineeringUID
-20220927120000
-20220927133000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221020120000
-20221020133000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230224110000
-20230224123000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221109130000
-20221109143000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230421133000
-20230421150000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230322143000
-20230322160000
- 
-
-Engenharia de Software - Software EngineeringUID
-20220915120000
-20220915133000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221128143000
-20221128160000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230303143000
-20230303160000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230516133000
-20230516150000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230424083000
-20230424100000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230328133000
-20230328150000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221121143000
-20221121160000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230301080000
-20230301093000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230505150000
-20230505163000
- 
-
-Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
-20221003100000
-20221003113000
- 
-
-Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
-20221121093000
-20221121110000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230428133000
-20230428150000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221128160000
-20221128173000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230214130000
-20230214143000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230213093000
-20230213110000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230210093000
-20230210110000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230327133000
-20230327150000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230420083000
-20230420100000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20220926150000
-20220926163000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230323160000
-20230323173000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221205130000
-20221205143000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230417120000
-20230417133000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221026133000
-20221026150000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20220926133000
-20220926150000
- 
-
-Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
-20221107110000
-20221107123000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230317143000
-20230317160000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230331083000
-20230331100000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230309143000
-20230309160000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221024133000
-20221024150000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221011120000
-20221011133000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221003120000
-20221003133000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221214143000
-20221214160000
- 
-
-Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
-20220919100000
-20220919113000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230307160000
-20230307173000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221011133000
-20221011150000
- 
-
-Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
-20221024083000
-20221024100000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221214160000
-20221214173000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221122160000
-20221122173000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221114160000
-20221114173000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221025150000
-20221025163000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230309093000
-20230309110000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221123130000
-20221123143000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221110160000
-20221110173000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230428083000
-20230428100000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230206160000
-20230206173000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221206160000
-20221206173000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221116130000
-20221116143000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221128130000
-20221128143000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230419070000
-20230419083000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230420150000
-20230420163000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221114143000
-20221114160000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221013150000
-20221013163000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221215130000
-20221215143000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221026150000
-20221026163000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230315080000
-20230315093000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230322080000
-20230322093000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221006120000
-20221006133000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230321160000
-20230321173000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230510150000
-20230510163000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221124160000
-20221124173000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230524133000
-20230524150000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230509133000
-20230509150000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230223093000
-20230223110000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230310093000
-20230310110000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230516120000
-20230516133000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230224160000
-20230224173000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221024150000
-20221024163000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221129130000
-20221129143000
- 
-
-Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
-20221017083000
-20221017100000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221004150000
-20221004163000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221115130000
-20221115143000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221103160000
-20221103173000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230504133000
-20230504150000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221129143000
-20221129160000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230417150000
-20230417163000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230307130000
-20230307143000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230313143000
-20230313160000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221107130000
-20221107143000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230426133000
-20230426150000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20220926120000
-20220926133000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230327150000
-20230327163000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230302093000
-20230302110000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221121160000
-20221121173000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230306130000
-20230306143000
- 
-
-Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
-20220912100000
-20220912113000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230510070000
-20230510083000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230511150000
-20230511163000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230328120000
-20230328133000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221019120000
-20221019133000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230217143000
-20230217160000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221121130000
-20221121143000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221019133000
-20221019150000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230301160000
-20230301173000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221123160000
-20221123173000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230517100000
-20230517113000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221004133000
-20221004150000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230309160000
-20230309173000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230210160000
-20230210173000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230209160000
-20230209173000
- 
-
-Engenharia de Software - Software EngineeringUID
-20220922133000
-20220922150000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230515150000
-20230515163000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230323143000
-20230323160000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221214130000
-20221214143000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230316143000
-20230316160000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230306143000
-20230306160000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230504083000
-20230504100000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230324143000
-20230324160000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230317110000
-20230317123000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230516150000
-20230516163000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230331100000
-20230331113000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230327083000
-20230327100000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230308080000
-20230308093000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230320130000
-20230320143000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221018133000
-20221018150000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221207160000
-20221207173000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221010150000
-20221010163000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230421150000
-20230421163000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221124130000
-20221124143000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221206143000
-20221206160000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221206130000
-20221206143000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230207110000
-20230207123000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221129160000
-20221129173000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230216160000
-20230216173000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230223160000
-20230223173000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230208110000
-20230208123000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20220922150000
-20220922163000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230419150000
-20230419163000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230303110000
-20230303123000
- 
-
-Engenharia de Software - Software EngineeringUID
-20220922120000
-20220922133000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221006133000
-20221006150000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230428150000
-20230428163000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20220919120000
-20220919133000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230424150000
-20230424163000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230320093000
-20230320110000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230209093000
-20230209110000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230508133000
-20230508150000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230503133000
-20230503150000
- 
-
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221107160000
-20221107173000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230227093000
-20230227110000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221110143000
-20221110160000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221114130000
-20221114143000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20220930083000
-20220930100000
- 
-
-Desenvolvimento para A Internet e Aplicações Móveis - Development
-20230503070000
-20230503083000
- 
-
-Engenharia de Software - Software EngineeringUID
-20220913120000
-20220913133000
- 
-
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230314160000
-20230314173000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230315160000
-20230315173000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230508150000
-20230508163000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230207130000
-20230207143000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221215143000
-20221215160000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230315143000
-20230315160000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230313093000
-20230313110000
  
 
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
@@ -1129,34 +134,39 @@ Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
 20230512150000
  
 
-Engenharia de Software - Software EngineeringUID
-20221027120000
-20221027133000
+Arquitetura de Redes - Network ArquitecturesUID
+20220915150000
+20220915163000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221107143000
+20221107160000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221122143000
+20221122160000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
-20230303160000
-20230303173000
+20230424120000
+20230424133000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
-20230418150000
-20230418163000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230216093000
-20230216110000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230523133000
-20230523150000
+20230502100000
+20230502113000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
-20230207160000
-20230207173000
+20230512120000
+20230512133000
+ 
+
+Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
+20221121110000
+20221121123000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1164,39 +174,69 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230217110000
  
 
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230516133000
+20230516150000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221025133000
+20221025150000
+ 
+
 Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230317093000
 20230317110000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230503100000
-20230503113000
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20220921120000
+20220921133000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230512150000
-20230512163000
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221130130000
+20221130143000
  
 
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230420133000
-20230420150000
+20230328120000
+20230328133000
  
 
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230419133000
-20230419150000
+Engenharia de Software - Software EngineeringUID
+20221110143000
+20221110160000
  
 
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230214143000
-20230214160000
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230428100000
+20230428113000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230512083000
+20230512100000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230215080000
 20230215093000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230509133000
+20230509150000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230330133000
+20230330150000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221102160000
+20221102173000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -1209,14 +249,9 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230310123000
  
 
-Modulação e Codificação - Modulation and CodingUID
-20220913150000
-20220913163000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230316160000
-20230316173000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230519120000
+20230519133000
  
 
 Projecto de Sistemas de Telecomunicações - Telecommunication Syst
@@ -1224,9 +259,19 @@ Projecto de Sistemas de Telecomunicações - Telecommunication Syst
 20230306173000
  
 
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230523100000
+20230523113000
+ 
+
 Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230307143000
-20230307160000
+20230320160000
+20230320173000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230303130000
+20230303143000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1234,29 +279,29 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230303110000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230217160000
-20230217173000
+Modulação e Codificação - Modulation and CodingUID
+20221130143000
+20221130160000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230519150000
-20230519163000
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230504133000
+20230504150000
  
 
 Engenharia de Software - Software EngineeringUID
-20221117130000
-20221117143000
+20221013133000
+20221013150000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230307143000
+20230307160000
  
 
 Modulação e Codificação - Modulation and CodingUID
-20221018150000
-20221018163000
- 
-
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230418133000
-20230418150000
+20221102143000
+20221102160000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1269,39 +314,99 @@ Engenharia de Software - Software EngineeringUID
 20221122143000
  
 
-Modulação e Codificação - Modulation and CodingUID
-20220930100000
-20220930113000
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230224143000
+20230224160000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230324160000
-20230324173000
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221011100000
+20221011113000
  
 
-Modulação e Codificação - Modulation and CodingUID
-20221025133000
-20221025150000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221102160000
-20221102173000
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221115143000
+20221115160000
  
 
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230308143000
-20230308160000
+20230227143000
+20230227160000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20220920150000
+20220920163000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221010120000
+20221010133000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221116160000
+20221116173000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221011150000
+20221011163000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221019133000
+20221019150000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230323143000
+20230323160000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20220915133000
+20220915150000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230227130000
+20230227143000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230322143000
+20230322160000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20220922150000
+20220922163000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230216160000
+20230216173000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230518133000
+20230518150000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230522120000
+20230522133000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20220928100000
+20220928113000
  
 
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230504150000
-20230504163000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230215110000
-20230215123000
+20230207130000
+20230207143000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
@@ -1309,9 +414,14 @@ Electrónica Programada e Processamento Digital de Sinais - Progra
 20220919163000
  
 
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230209143000
-20230209160000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230505120000
+20230505133000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230302143000
+20230302160000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
@@ -1319,9 +429,24 @@ Electrónica Programada e Processamento Digital de Sinais - Progra
 20221026133000
  
 
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230502120000
-20230502133000
+Modulação e Codificação - Modulation and CodingUID
+20221109143000
+20221109160000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221207160000
+20221207173000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221109110000
+20221109123000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221020150000
+20221020163000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1329,9 +454,19 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230324110000
  
 
-Arquitetura de Redes - Network ArquitecturesUID
-20220915150000
-20220915163000
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230329070000
+20230329083000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230504150000
+20230504163000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230516100000
+20230516113000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1344,9 +479,14 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230210123000
  
 
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230524150000
-20230524163000
+Engenharia de Software - Software EngineeringUID
+20220915120000
+20220915133000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221115160000
+20221115173000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
@@ -1354,9 +494,29 @@ Segurança e Gestão de Redes - Network Security and ManagementUID
 20230327133000
  
 
+Engenharia de Software - Software EngineeringUID
+20221103103000
+20221103120000
+ 
+
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221010100000
 20221010113000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221123160000
+20221123173000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221017120000
+20221017133000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230310143000
+20230310160000
  
 
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
@@ -1364,14 +524,24 @@ Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
 20230331150000
  
 
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20220920100000
+20220920113000
+ 
+
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
 20230206143000
 20230206160000
  
 
-Engenharia de Software - Software EngineeringUID
-20220915120000
-20220915133000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230313130000
+20230313143000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221027150000
+20221027163000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -1379,19 +549,14 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221114123000
  
 
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230428120000
+20230428133000
+ 
+
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
 20230522133000
 20230522150000
- 
-
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230302160000
-20230302173000
- 
-
-Modulação e Codificação - Modulation and CodingUID
-20221115160000
-20221115173000
  
 
 Arquitetura de Redes - Network ArquitecturesUID
@@ -1415,18 +580,28 @@ Arquitetura de Redes - Network ArquitecturesUID
  
 
 Modulação e Codificação - Modulation and CodingUID
+20221012150000
+20221012163000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230207110000
+20230207123000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
 20220919133000
 20220919150000
  
 
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221109143000
-20221109160000
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230302160000
+20230302173000
  
 
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20220928133000
-20220928150000
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230308143000
+20230308160000
  
 
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
@@ -1434,9 +609,49 @@ Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
 20230505150000
  
 
+Arquitetura de Redes - Network ArquitecturesUID
+20221206160000
+20221206173000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230228130000
+20230228143000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20221124130000
+20221124143000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20220927120000
+20220927133000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20221103130000
+20221103143000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20221215093000
+20221215110000
+ 
+
 Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230505083000
 20230505100000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230418133000
+20230418150000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230224110000
+20230224123000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -1444,9 +659,64 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20220919100000
  
 
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230426133000
+20230426150000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221109160000
+20221109173000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20220922120000
+20220922133000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230421120000
+20230421133000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221109130000
+20221109143000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230421133000
+20230421150000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230315160000
+20230315173000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230525150000
+20230525163000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20220915120000
+20220915133000
+ 
+
 Arquitetura de Redes - Network ArquitecturesUID
 20221117160000
 20221117173000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230228110000
+20230228123000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221128143000
+20221128160000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -1454,19 +724,74 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221205123000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230206093000
-20230206110000
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230303143000
+20230303160000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20220929083000
+20220929100000
  
 
 Engenharia de Software - Software EngineeringUID
-20221124143000
-20221124160000
+20221103143000
+20221103160000
  
 
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230228143000
-20230228160000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230331120000
+20230331133000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230523133000
+20230523150000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221121143000
+20221121160000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230301080000
+20230301093000
+ 
+
+Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
+20221003100000
+20221003113000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221026133000
+20221026150000
+ 
+
+Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
+20221121093000
+20221121110000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230310130000
+20230310143000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230428133000
+20230428150000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221128160000
+20221128173000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230324130000
+20230324143000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
@@ -1474,9 +799,39 @@ Segurança e Gestão de Redes - Network Security and ManagementUID
 20230213143000
  
 
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230223143000
-20230223160000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230424100000
+20230424113000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230210093000
+20230210110000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230327133000
+20230327150000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20220926150000
+20220926163000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221205130000
+20221205143000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230417120000
+20230417133000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230309143000
+20230309160000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1484,44 +839,79 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230517083000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230214160000
-20230214173000
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230502133000
+20230502150000
  
 
 Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230418120000
-20230418133000
+20230315143000
+20230315160000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
-20221116143000
-20221116160000
+20220927133000
+20220927150000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230509150000
-20230509163000
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230322160000
+20230322173000
  
 
-Engenharia de Software - Software EngineeringUID
-20221027133000
-20221027150000
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230503133000
+20230503150000
  
 
-Engenharia de Software - Software EngineeringUID
-20220929133000
-20220929150000
+Modulação e Codificação - Modulation and CodingUID
+20220926133000
+20220926150000
+ 
+
+Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
+20221107110000
+20221107123000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230317143000
+20230317160000
  
 
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230215143000
-20230215160000
+20230427133000
+20230427150000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230328150000
-20230328163000
+Modulação e Codificação - Modulation and CodingUID
+20221012133000
+20221012150000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230331083000
+20230331100000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221129160000
+20221129173000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230329133000
+20230329150000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230329150000
+20230329163000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221024133000
+20221024150000
  
 
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
@@ -1529,14 +919,39 @@ Sistemas de Comunicação Ótica - Optical Communication SystemsUID
 20230515150000
  
 
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230517150000
-20230517163000
+Engenharia de Software - Software EngineeringUID
+20221011120000
+20221011133000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221003120000
+20221003133000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230228143000
+20230228160000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20220928133000
+20220928150000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230510150000
+20230510163000
  
 
 Modulação e Codificação - Modulation and CodingUID
 20221031143000
 20221031160000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230420133000
+20230420150000
  
 
 Projecto de Sistemas de Telecomunicações - Telecommunication Syst
@@ -1549,6 +964,21 @@ Electrónica Programada e Processamento Digital de Sinais - Progra
 20221102143000
  
 
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230210130000
+20230210143000
+ 
+
+Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
+20220919100000
+20220919113000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230214110000
+20230214123000
+ 
+
 Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230217110000
 20230217123000
@@ -1559,14 +989,49 @@ Engenharia de Software - Software EngineeringUID
 20221108143000
  
 
+Engenharia de Software - Software EngineeringUID
+20221020133000
+20221020150000
+ 
+
 Electrónica Programada e Processamento Digital de Sinais - Progra
 20220912150000
 20220912163000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230323093000
-20230323110000
+Modulação e Codificação - Modulation and CodingUID
+20220921150000
+20220921163000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20221215130000
+20221215143000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221004133000
+20221004150000
+ 
+
+Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
+20221024083000
+20221024100000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221006083000
+20221006100000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230301160000
+20230301173000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20220929120000
+20220929133000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
@@ -1574,14 +1039,9 @@ Electrónica Programada e Processamento Digital de Sinais - Progra
 20220914133000
  
 
-Engenharia de Software - Software EngineeringUID
-20221117143000
-20221117160000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230301143000
-20230301160000
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221114160000
+20221114173000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1589,9 +1049,14 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230224110000
  
 
+Engenharia de Software - Software EngineeringUID
+20221124143000
+20221124160000
+ 
+
 Arquitetura de Redes - Network ArquitecturesUID
-20220928150000
-20220928163000
+20221110160000
+20221110173000
  
 
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
@@ -1604,29 +1069,104 @@ Sistemas de Comunicação Ótica - Optical Communication SystemsUID
 20230320160000
  
 
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221123130000
+20221123143000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221004150000
+20221004163000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230321130000
+20230321143000
+ 
+
 Engenharia de Software - Software EngineeringUID
-20221103143000
-20221103160000
+20221006133000
+20221006150000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230428083000
+20230428100000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230523120000
+20230523133000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230216143000
+20230216160000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230208143000
+20230208160000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230206160000
+20230206173000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
-20221012133000
-20221012150000
+20221116130000
+20221116143000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221128130000
+20221128143000
  
 
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230426150000
-20230426163000
+20230316160000
+20230316173000
  
 
-Engenharia de Software - Software EngineeringUID
-20221013120000
-20221013133000
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230509120000
+20230509133000
  
 
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230517133000
-20230517150000
+20230427150000
+20230427163000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221013150000
+20221013163000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230419070000
+20230419083000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221006100000
+20221006113000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221114143000
+20221114160000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221123143000
+20221123160000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221129143000
+20221129160000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1634,14 +1174,39 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230426083000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230322110000
-20230322123000
+Engenharia de Software - Software EngineeringUID
+20220929133000
+20220929150000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230329100000
-20230329113000
+Engenharia de Software - Software EngineeringUID
+20221027133000
+20221027150000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221011133000
+20221011150000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230510133000
+20230510150000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230315080000
+20230315093000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230426150000
+20230426163000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230307130000
+20230307143000
  
 
 Modulação e Codificação - Modulation and CodingUID
@@ -1649,19 +1214,29 @@ Modulação e Codificação - Modulation and CodingUID
 20221010150000
  
 
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230214143000
+20230214160000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230322080000
+20230322093000
+ 
+
 Engenharia de Software - Software EngineeringUID
 20221004120000
 20221004133000
  
 
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221031160000
-20221031173000
+Modulação e Codificação - Modulation and CodingUID
+20220929100000
+20220929113000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
-20221012100000
-20221012113000
+20221031160000
+20221031173000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -1674,19 +1249,34 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230421113000
  
 
-Modulação e Codificação - Modulation and CodingUID
-20220927133000
-20220927150000
- 
-
-Arquitetura de Redes - Network ArquitecturesUID
-20221130160000
-20221130173000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230418100000
+20230418113000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
 20230515120000
 20230515133000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221124160000
+20221124173000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20221130160000
+20221130173000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230307110000
+20230307123000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230511150000
+20230511163000
  
 
 Modulação e Codificação - Modulation and CodingUID
@@ -1699,9 +1289,9 @@ Engenharia de Software - Software EngineeringUID
 20221216130000
  
 
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20221130143000
-20221130160000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230328100000
+20230328113000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
@@ -1714,9 +1304,9 @@ Electrónica Programada e Processamento Digital de Sinais - Progra
 20221012133000
  
 
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230329150000
-20230329163000
+Modulação e Codificação - Modulation and CodingUID
+20220914150000
+20220914163000
  
 
 Projecto de Sistemas de Telecomunicações - Telecommunication Syst
@@ -1724,14 +1314,24 @@ Projecto de Sistemas de Telecomunicações - Telecommunication Syst
 20230227173000
  
 
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230310093000
+20230310110000
+ 
+
 Modulação e Codificação - Modulation and CodingUID
 20220912133000
 20220912150000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230502150000
-20230502163000
+Engenharia de Software - Software EngineeringUID
+20221117143000
+20221117160000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221024150000
+20221024163000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -1739,24 +1339,49 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221128110000
  
 
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230502133000
-20230502150000
+Engenharia de Software - Software EngineeringUID
+20221129130000
+20221129143000
+ 
+
+Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
+20221017083000
+20221017100000
  
 
 Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230510133000
-20230510150000
+20230309160000
+20230309173000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230224130000
+20230224143000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230330150000
+20230330163000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20220913133000
+20220913150000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20221115130000
+20221115143000
  
 
 Modulação e Codificação - Modulation and CodingUID
-20221108143000
-20221108160000
+20221026150000
+20221026163000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230315110000
-20230315123000
+Arquitetura de Redes - Network ArquitecturesUID
+20221214130000
+20221214143000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -1764,14 +1389,24 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221031123000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230310160000
-20230310173000
+Arquitetura de Redes - Network ArquitecturesUID
+20221103160000
+20221103173000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230515083000
-20230515100000
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230517150000
+20230517163000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230314110000
+20230314123000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230314143000
+20230314160000
  
 
 Engenharia de Software - Software EngineeringUID
@@ -1779,9 +1414,19 @@ Engenharia de Software - Software EngineeringUID
 20221025133000
  
 
-Engenharia de Software - Software EngineeringUID
-20220929120000
-20220929133000
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230417150000
+20230417163000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230313143000
+20230313160000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221107130000
+20221107143000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
@@ -1789,19 +1434,29 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20220912100000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230417083000
-20230417100000
+Arquitetura de Redes - Network ArquitecturesUID
+20220926120000
+20220926133000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230419100000
-20230419113000
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230328133000
+20230328150000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230522083000
-20230522100000
+Arquitetura de Redes - Network ArquitecturesUID
+20220927150000
+20220927163000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230327150000
+20230327163000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221108160000
+20221108173000
  
 
 Modulação e Codificação - Modulation and CodingUID
@@ -1810,13 +1465,43 @@ Modulação e Codificação - Modulation and CodingUID
  
 
 Engenharia de Software - Software EngineeringUID
-20221110130000
-20221110143000
+20221117130000
+20221117143000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
-20221207143000
-20221207160000
+20221121160000
+20221121173000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230306130000
+20230306143000
+ 
+
+Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
+20220912100000
+20220912113000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230207143000
+20230207160000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230526120000
+20230526133000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230510070000
+20230510083000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20220913150000
+20220913163000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
@@ -1824,9 +1509,14 @@ Segurança e Gestão de Redes - Network Security and ManagementUID
 20230206143000
  
 
-Arquitetura de Redes - Network ArquitecturesUID
-20220914150000
-20220914163000
+Modulação e Codificação - Modulation and CodingUID
+20221116143000
+20221116160000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221019120000
+20221019133000
  
 
 Arquitetura de Redes - Network ArquitecturesUID
@@ -1834,14 +1524,19 @@ Arquitetura de Redes - Network ArquitecturesUID
 20221006163000
  
 
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230330150000
-20230330163000
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230301143000
+20230301160000
  
 
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230523120000
-20230523133000
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230217143000
+20230217160000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221121130000
+20221121143000
  
 
 Arquitetura de Redes - Network ArquitecturesUID
@@ -1849,24 +1544,39 @@ Arquitetura de Redes - Network ArquitecturesUID
 20220929163000
  
 
-Segurança e Gestão de Redes - Network Security and ManagementUID
-20230331150000
-20230331163000
+Engenharia de Software - Software EngineeringUID
+20221006120000
+20221006133000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230301110000
-20230301123000
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230515150000
+20230515163000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
-20221102143000
-20221102160000
+20221108143000
+20221108160000
  
 
-Arquitetura de Redes - Network ArquitecturesUID
-20221006150000
-20221006163000
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221206143000
+20221206160000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230517133000
+20230517150000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230518150000
+20230518163000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230306143000
+20230306160000
  
 
 Arquitetura de Redes - Network ArquitecturesUID
@@ -1874,14 +1584,14 @@ Arquitetura de Redes - Network ArquitecturesUID
 20221031143000
  
 
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230321143000
-20230321160000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230321110000
+20230321123000
  
 
-Arquitetura de Redes - Network ArquitecturesUID
-20221019150000
-20221019163000
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230324143000
+20230324160000
  
 
 Arquitetura de Redes - Network ArquitecturesUID
@@ -1889,19 +1599,49 @@ Arquitetura de Redes - Network ArquitecturesUID
 20221024133000
  
 
-Arquitetura de Redes - Network ArquitecturesUID
-20221116160000
-20221116173000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230317130000
+20230317143000
  
 
-Arquitetura de Redes - Network ArquitecturesUID
-20221109160000
-20221109173000
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230317110000
+20230317123000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230214130000
+20230214143000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230217130000
+20230217143000
  
 
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
 20230210143000
 20230210160000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230516120000
+20230516133000
+ 
+
+Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
+20230502120000
+20230502133000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230419133000
+20230419150000
+ 
+
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230331100000
+20230331113000
  
 
 Projecto de Sistemas de Telecomunicações - Telecommunication Syst
@@ -1910,33 +1650,28 @@ Projecto de Sistemas de Telecomunicações - Telecommunication Syst
  
 
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230330133000
-20230330150000
+20230418120000
+20230418133000
  
 
-Projecto de Sistemas de Telecomunicações - Telecommunication Syst
-20230321130000
-20230321143000
+Engenharia de Software - Software EngineeringUID
+20221013120000
+20221013133000
  
 
-Modulação e Codificação - Modulation and CodingUID
-20221115143000
-20221115160000
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230308080000
+20230308093000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
-20230424120000
-20230424133000
+20230320130000
+20230320143000
  
 
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20220926083000
 20220926100000
- 
-
-Sistemas de Comunicação Ótica - Optical Communication SystemsUID
-20230322160000
-20230322173000
  
 
 Engenharia de Software - Software EngineeringUID
@@ -1949,14 +1684,19 @@ Desenvolvimento para A Internet e Aplicações Móveis - Development
 20230324123000
  
 
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230420150000
+20230420163000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221010150000
+20221010163000
+ 
+
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221128110000
 20221128123000
- 
-
-Engenharia de Software - Software EngineeringUID
-20221020133000
-20221020150000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
@@ -1969,9 +1709,19 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221107110000
  
 
-Sinais Aleatórios em Telecomunicações e Informática - Random Sign
-20230511083000
-20230511100000
+Engenharia de Software - Software EngineeringUID
+20221206130000
+20221206143000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221025150000
+20221025163000
+ 
+
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230509100000
+20230509113000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
@@ -1979,9 +1729,9 @@ Electrónica Programada e Processamento Digital de Sinais - Progra
 20220928133000
  
 
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230427133000
-20230427150000
+Segurança e Gestão de Redes - Network Security and ManagementUID
+20230207110000
+20230207123000
  
 
 Projecto de Sistemas de Telecomunicações - Telecommunication Syst
@@ -1994,14 +1744,14 @@ Engenharia de Software - Software EngineeringUID
 20221115113000
  
 
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20220921133000
-20220921150000
+Desenvolvimento para A Internet e Aplicações Móveis - Development
+20230303110000
+20230303123000
  
 
-Electrónica Programada e Processamento Digital de Sinais - Progra
-20220914133000
-20220914150000
+Arquitetura de Redes - Network ArquitecturesUID
+20221018150000
+20221018163000
  
 
 Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -2014,9 +1764,24 @@ Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221003100000
  
 
-Modulação e Codificação - Modulation and CodingUID
-20220920133000
-20220920150000
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230215143000
+20230215160000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230323160000
+20230323173000
+ 
+
+Engenharia de Software - Software EngineeringUID
+20221027120000
+20221027133000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20220919120000
+20220919133000
  
 
 Electrónica Programada e Processamento Digital de Sinais - Progra
@@ -2024,9 +1789,24 @@ Electrónica Programada e Processamento Digital de Sinais - Progra
 20221213143000
  
 
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230424150000
+20230424163000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20220920133000
+20220920150000
+ 
+
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221031093000
 20221031110000
+ 
+
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230511133000
+20230511150000
  
 
 Segurança e Gestão de Redes - Network Security and ManagementUID
@@ -2034,14 +1814,54 @@ Segurança e Gestão de Redes - Network Security and ManagementUID
 20230508133000
  
 
+Engenharia de Software - Software EngineeringUID
+20221215110000
+20221215123000
+ 
+
 Gestão de Projectos de Tecnologia e Sistemas de Informação - Mana
 20221010083000
 20221010100000
  
 
-Sistemas de Comunicação Sem Fios e Móveis - Wireless and Mobile C
-20230216143000
-20230216160000
+Sistemas de Comunicação Ótica - Optical Communication SystemsUID
+20230508133000
+20230508150000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230419150000
+20230419163000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230208160000
+20230208173000
+ 
+
+Projecto de Sistemas de Telecomunicações - Telecommunication Syst
+20230215160000
+20230215173000
+ 
+
+Electrónica Programada e Processamento Digital de Sinais - Progra
+20221107160000
+20221107173000
+ 
+
+Modulação e Codificação - Modulation and CodingUID
+20220921133000
+20220921150000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221122160000
+20221122173000
+ 
+
+Arquitetura de Redes - Network ArquitecturesUID
+20221114130000
+20221114143000
  
 
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and M - Exame
@@ -2057,21 +1877,6 @@ Sistemas de Comunicação Sem Fios e Móveis - Wireless and M - Exame
 Sistemas de Comunicação Sem Fios e Móveis - Wireless and M - Exame
 20230713070000
 20230713100000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Rand - Exame
-20230616140000
-20230616170000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Rand - Exame
-20230714173000
-20230714203000
- 
-
-Sinais Aleatórios em Telecomunicações e Informática - Rand - Exame
-20230629103000
-20230629133000
  
 
 Electrónica Programada e Processamento Digital de Sinais - - Exame

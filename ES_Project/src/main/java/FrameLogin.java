@@ -130,13 +130,19 @@ public class FrameLogin extends JFrame {
 		pwdPassword.setBounds(6, 6, 229, 26);
 		panel_1_1.add(pwdPassword);
 		
-		final JPanel pnlBtnLogin = new JPanel();
+		JPanel pnlBtnLogin = new JPanel();
 		pnlBtnLogin.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(txtUsername.getText().equals("admin") && pwdPassword.getText().equals("admin123")) {
 					lblLoginMessage.setText("");
 					JOptionPane.showMessageDialog(null,"Login Successful");
+					
+					// Opening the Frame Dashboard
+					FrameDashboard frame = new FrameDashboard();
+					frame.setVisible(true);
+					setVisible(false);
+					dispose();
 					
 				}
 				else if (txtUsername.getText().equals("") || txtUsername.getText().equals("Username") || pwdPassword.getText().equals("") || pwdPassword.getText().equals("Password")){

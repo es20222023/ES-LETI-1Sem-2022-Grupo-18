@@ -2,6 +2,9 @@ import java.awt.EventQueue;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.text.ParseException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -14,6 +17,9 @@ import javax.swing.JSplitPane;
 import javax.swing.JToolBar;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
+
+import com.itextpdf.text.DocumentException;
+
 import java.awt.Font;
 
 public class FrameDashboard extends JFrame {
@@ -119,7 +125,14 @@ public class FrameDashboard extends JFrame {
 		ViewPanel.addMouseListener(new PanelButtomMouseAdapter(ViewPanel) {
 			@Override
 			public void mouseClicked(MouseEvent e){
-				menuClicked(ViewPanel2);
+				//menuClicked(ViewPanel2);
+				CalendarEngine calendar = new CalendarEngine();
+				try {
+					calendar.startCalendar();
+				} catch (InvocationTargetException | ParseException | IOException | DocumentException
+						| InterruptedException e1) {
+					e1.printStackTrace();
+				}
 			}
 		});
 		ViewPanel.setBorder(new LineBorder(new Color(255, 255, 255)));
@@ -164,8 +177,8 @@ public class FrameDashboard extends JFrame {
 				if(JOptionPane.showConfirmDialog(null, "Are you sure that you want to sign out?") == 0) {
 					FrameLogin frameLogin = new FrameLogin();
 					frameLogin.setVisible(true);
-					FrameDashboard.this.setVisible(false);
-					FrameDashboard.this.dispose();
+					setVisible(false);
+					dispose();
 				}
 				
 			}

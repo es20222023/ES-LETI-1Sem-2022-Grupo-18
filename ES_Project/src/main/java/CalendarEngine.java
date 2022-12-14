@@ -40,9 +40,10 @@ public class CalendarEngine {
 		
 		MongoDB db = new MongoDB();
 		for (User u : db.getUsers()) {
-			users.add(u);
-		}
-
+			if(!users.contains(u)) 
+				users.add(u);
+		}			
+		
 		// Creating main frame
 		JFrame frm = new JFrame();
 		// Adding events to events list by user
@@ -135,7 +136,7 @@ public class CalendarEngine {
 		frm.add(cal, BorderLayout.CENTER);
 		frm.setSize(1500, 800);
 		frm.setVisible(true);
-		frm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		//frm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		frm.setLocationRelativeTo(null);
 
 	}

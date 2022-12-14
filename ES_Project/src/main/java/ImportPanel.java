@@ -4,6 +4,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -12,6 +15,8 @@ import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 import javax.swing.JPasswordField;
 import javax.swing.SwingConstants;
+
+
 
 public class ImportPanel extends JPanel {
 	private JTextField txtUsername;
@@ -108,6 +113,17 @@ public class ImportPanel extends JPanel {
 			public void mouseClicked(MouseEvent e) {
 				
 				String user = txtUsername.getText();
+				
+				try {
+					IcsToJson icsToJson = new IcsToJson(txtURL.getText());
+					File jsonFile = icsToJson.getJson(user);
+					MongoDB.importData(jsonFile.getName());
+					
+				} catch (MalformedURLException e1) {
+					e1.printStackTrace();
+				} catch (IOException e2) {
+					e2.printStackTrace();
+				}
 				lblSubmitMessage.setText("Calendar submitted by " + user);
 				JOptionPane.showMessageDialog(null,"Import Calendar Successful");
 				
