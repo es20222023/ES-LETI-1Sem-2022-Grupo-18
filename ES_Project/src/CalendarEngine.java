@@ -19,39 +19,43 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
 public class CalendarEngine {
-	//List with users
+	// List with users
 	public static ArrayList<User> users = new ArrayList<User>();
-	//List with all events
+	// List with all events
 	public static ArrayList<CalendarEvent> events = new ArrayList<>();
-	//Calendar
+	// Calendar
 	public static WeekCalendar cal;
 
 	public void startCalendar()
 			throws ParseException, IOException, DocumentException, InvocationTargetException, InterruptedException {
 		
-		User andre = new User("André",
-				"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=ajcoa@iscte.pt&password=vdUlwNxIno1kfyt9Bb8xlmucoNeh9kpodtkz7Ar909kSBNABXxgOqYDV40KA5DbQ9KRjj55ViqbfZurzgxp8k7LIjmfQgPe5LXftA8hrDr3UzlTW9QRl6F3WVwGdSslZ ",
-				Color.GRAY);
-		User madalena = new User("Madalena",
-				"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=mmrtj@iscte.pt&password=FofNis92nl2BbmRTA9KZHS0Q8uALDoY4FUwYkbmxHI9ehgU10vflo9jHZWmH2wes3Idrkz1BcEF4JnMUTopbSvf77LNhuK9clrGAmmWQdUZiE5g6TYvjdgx0MgYkP0a8",
-				Color.PINK);
-		User alexandra = new User("Alexandra",
-				"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=ajcoa@iscte.pt&password=vdUlwNxIno1kfyt9Bb8xlmucoNeh9kpodtkz7Ar909kSBNABXxgOqYDV40KA5DbQ9KRjj55ViqbfZurzgxp8k7LIjmfQgPe5LXftA8hrDr3UzlTW9QRl6F3WVwGdSslZ",
-				Color.CYAN);
-		
-		users.add(andre);
-		users.add(alexandra);
-		users.add(madalena);
-		
-		//Creating main frame
+		  //User andre = new User("André",
+		  //"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=ajcoa@iscte.pt&password=vdUlwNxIno1kfyt9Bb8xlmucoNeh9kpodtkz7Ar909kSBNABXxgOqYDV40KA5DbQ9KRjj55ViqbfZurzgxp8k7LIjmfQgPe5LXftA8hrDr3UzlTW9QRl6F3WVwGdSslZ "
+		  //, Color.GRAY); 
+		User madalena = new User("Madalena","webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=mmrtj@iscte.pt&password=FofNis92nl2BbmRTA9KZHS0Q8uALDoY4FUwYkbmxHI9ehgU10vflo9jHZWmH2wes3Idrkz1BcEF4JnMUTopbSvf77LNhuK9clrGAmmWQdUZiE5g6TYvjdgx0MgYkP0a8",Color.PINK); 
+		//User alexandra = new User("Alexandra",
+		  //"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=ajcoa@iscte.pt&password=vdUlwNxIno1kfyt9Bb8xlmucoNeh9kpodtkz7Ar909kSBNABXxgOqYDV40KA5DbQ9KRjj55ViqbfZurzgxp8k7LIjmfQgPe5LXftA8hrDr3UzlTW9QRl6F3WVwGdSslZ",
+		 // Color.CYAN);
+		  
+		  //users.add(andre); users.add(alexandra); 
+		//users.add(madalena);
+		 
+
+		MongoDB db = new MongoDB();
+		//db.importData("andre.json");
+		//MongoDB.importData("alexandra.json");
+		for (User u : db.getUsers()) {
+			users.add(u);
+		}
+
+		// Creating main frame
 		JFrame frm = new JFrame();
-		
-		//Adding events to events list by user
+		// Adding events to events list by user
 		for (User u : users) {
 			events.addAll(u.getCalendarEventList());
 		}
-		
-		//Create new week calendar w/ event list
+
+		// Create new week calendar w/ event list
 		cal = new WeekCalendar(events);
 
 		cal.addCalendarEventClickListener(e -> System.out.println(e.getCalendarEvent()));
@@ -59,8 +63,8 @@ public class CalendarEngine {
 			System.out.println(e.getDateTime());
 			System.out.println(Calendar.roundTime(e.getDateTime().toLocalTime(), 30));
 		});
-		
-		//Creating necessary buttons and associating functions
+
+		// Creating necessary buttons and associating functions
 		JButton goToTodayBtn = new JButton("Today");
 		goToTodayBtn.addActionListener(e -> cal.goToToday());
 
@@ -141,7 +145,7 @@ public class CalendarEngine {
 
 	}
 
-	//Function that will be called if a checkbox change state
+	// Function that will be called if a checkbox change state
 	public void checkBoxPressed(JCheckBox cb) throws ParseException, IOException {
 		User user = null;
 		for (User u : users) {
@@ -167,7 +171,7 @@ public class CalendarEngine {
 		cal.repaint();
 	}
 
-	//Funtion to schedule a new event
+	// Funtion to schedule a new event
 	public void scheduleEvent() {
 		JFrame chooseUser = new JFrame();
 		JPanel user = new JPanel();
@@ -197,7 +201,7 @@ public class CalendarEngine {
 		chooseUser.setLocationRelativeTo(null);
 	}
 
-	//Function that will open a new frame to give new event informations
+	// Function that will open a new frame to give new event informations
 	public void newEventFrame(User user) {
 		String dates[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17",
 				"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" };
@@ -344,7 +348,7 @@ public class CalendarEngine {
 				endTime, descriptionText, outputText, res, resadd));
 	}
 
-	//Function called if "submit" button is pressed
+	// Function called if "submit" button is pressed
 	public void submitPressed(User user, JTextField nameText, JComboBox<String> day, JComboBox<String> month,
 			JComboBox<String> year, JComboBox<String> startHour, JComboBox<String> endHour, JTextArea descriptionArea,
 			JTextArea output, JLabel res, JTextArea resadd) throws ParseException, IOException {
@@ -392,14 +396,14 @@ public class CalendarEngine {
 		}
 	}
 
-	//Function to add to json file a new event
+	// Function to add to json file a new event
 	public void addToJson(CalendarEvent ce) throws IOException {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
 		LocalDateTime ldtStart = LocalDateTime.of(ce.getDate(), ce.getStart());
 		LocalDateTime ldtEnd = LocalDateTime.of(ce.getDate(), ce.getEnd());
 		String dateStart = ldtStart.format(formatter);
 		String dateEnd = ldtEnd.format(formatter);
-		
+
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		Event e = new Event(ce.getText(), dateStart, dateEnd, ce.getUser().getUserName());
 		String json = gson.toJson(e);
@@ -411,7 +415,7 @@ public class CalendarEngine {
 		out.close();
 	}
 
-	//function called if "reset" button is called
+	// function called if "reset" button is called
 	public void resetPressed(JTextField nameText, JComboBox<String> day, JComboBox<String> month,
 			JComboBox<String> year, JComboBox<String> startHour, JComboBox<String> endHour, JTextArea descriptionArea,
 			JTextArea output, JLabel res, JTextArea resadd) {
@@ -428,7 +432,7 @@ public class CalendarEngine {
 		resadd.setText(def);
 	}
 
-	//Function to check if a new event can be added
+	// Function to check if a new event can be added
 	public static boolean checkAvaliability(User user, CalendarEvent ce) throws ParseException, IOException {
 		ArrayList<CalendarEvent> userEvents = user.getCalendarEventList();
 		ArrayList<CalendarEvent> dayEvents = new ArrayList<>();
@@ -446,27 +450,27 @@ public class CalendarEngine {
 		return true;
 	}
 
-	//Pass String to LocalTime
+	// Pass String to LocalTime
 	public static LocalTime toTime(String a) {
 		LocalTime lt = LocalTime.of(untilDots(a), afterDots(a));
 		return lt;
 	}
 
-	//Get a string until ":"
+	// Get a string until ":"
 	public static int untilDots(String a) {
 		int i = a.indexOf(":");
 		String b = a.substring(0, i);
 		return Integer.parseInt(b);
 	}
 
-	//Get a string after ":"
+	// Get a string after ":"
 	public static int afterDots(String a) {
 		int i = a.indexOf(":");
 		String b = a.substring(i + 1, a.length());
 		return Integer.parseInt(b);
 	}
-	
-	//Passing userNames list to array
+
+	// Passing userNames list to array
 	public static String[] userNamesToArray() {
 		String[] userNames = new String[users.size()];
 		int i = 0;
@@ -477,7 +481,7 @@ public class CalendarEngine {
 		return userNames;
 	}
 
-	//Create a new chart
+	// Create a new chart
 	public void avaliabilityChart() throws InvocationTargetException, InterruptedException {
 		LocalDate start = cal.getDateFromDay(cal.getStartDay());
 		LocalDate end = cal.getDateFromDay(cal.getEndDay());

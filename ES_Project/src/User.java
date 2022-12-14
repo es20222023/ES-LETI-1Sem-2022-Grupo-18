@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
 import java.time.LocalDateTime;
@@ -10,11 +11,26 @@ public class User {
 	private String userName;
 	private String link;
 	private Color colorPreference;
+	private File userFile;
 
 	public User(String userName, String link, Color colorPreference) {
 		this.link = link;
 		this.colorPreference = colorPreference;
 		this.userName = userName;
+	}
+	
+	public User(String userName, File userFile, Color colorPreference) {
+		this.userName = userName;
+		this.userFile = userFile;
+		this.colorPreference = colorPreference;
+	}
+	
+	public File getUserFile() {
+		return userFile;
+	}
+	
+	public void setUserFile(File f) {
+		this.userFile = f;
 	}
 
 	public String getFileName() {
@@ -24,29 +40,45 @@ public class User {
 	public Color getColorPreference() {
 		return colorPreference;
 	}
+	
+	public String getLink() {
+		return link;
+	}
 
-	public ArrayList<Event> getEventList() throws ParseException, IOException {
-		return FillCalendar.returnEventList(link, this.userName);
+	public ArrayList<Event> getEventListFromLink() throws ParseException, IOException {
+		return FillCalendar.returnEventListFromLink(this.link, this.userName);
+	}
+	
+	public ArrayList<Event> getEventListFromFile() throws ParseException, IOException {
+		return FillCalendar.returnEventListFromFile(this.userFile, this.userName);
 	}
 
 	public ArrayList<CalendarEvent> getCalendarEventList() throws ParseException, IOException {
-		ArrayList<CalendarEvent> events = new ArrayList<CalendarEvent>();
-		for (Event e : getEventList()) {
+		ArrayList<CalendarEvent> calendarEvents = new ArrayList<CalendarEvent>();
+		ArrayList<Event> events = new ArrayList<>();
+		if(this.link == null && this.userFile != null) {
+			events = getEventListFromFile();
+		}else if(this.userFile == null && this.link != null) {
+			events = getEventListFromLink();
+		}else {
+			events = getEventListFromFile();
+		}
+		for (Event e : events) {
 			LocalDateTime StartDate = toDate(e.getDateStart());
 			LocalDateTime EndDate = toDate(e.getDateEnd());
 
 			if (!(StartDate.getYear() == 0 || StartDate.getMonthValue() == 0 || StartDate.getDayOfMonth() == 0
 					|| EndDate.getYear() == 0 || EndDate.getMonthValue() == 0 || EndDate.getDayOfMonth() == 0)) {
 
-				events.add(new CalendarEvent(this, StartDate.toLocalDate(), StartDate.toLocalTime(), EndDate.toLocalTime(),
+				calendarEvents.add(new CalendarEvent(this, StartDate.toLocalDate(), StartDate.toLocalTime(), EndDate.toLocalTime(),
 						cutAfterTrace(insertPeriodically(e.getName(), "\n", 34))));
 
 			}
 		}
-		for(CalendarEvent ce: events) {
+		for(CalendarEvent ce: calendarEvents) {
 			ce.setColor(colorPreference);
 		}
-		return events;
+		return calendarEvents;
 	}
 
 	public static String removeTZ(String a) {

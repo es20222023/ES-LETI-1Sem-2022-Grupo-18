@@ -1,55 +1,63 @@
 
+import java.awt.Color;
 import java.io.*;
-import com.mongodb.bulk.BulkWriteResult;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.BulkWriteOptions;
 import com.mongodb.client.model.Filters;
-import com.mongodb.client.model.InsertOneModel;
-import com.mongodb.client.result.InsertManyResult;
-import com.mongodb.client.result.InsertOneResult;
-import com.mongodb.util.JSON;
-
 import org.bson.Document;
 import org.bson.conversions.Bson;
 
+import com.mongodb.MongoWriteException;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.Random;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBCursor;
-import com.mongodb.DBObject;
-import com.mongodb.MongoWriteException;
-import org.apache.commons.io.IOUtils;
-import org.bson.json.JsonMode;
-import org.bson.json.JsonObject;
-import org.bson.json.JsonWriterSettings;
-
-import javax.naming.StringRefAddr;
 
 public class MongoDB {
 
 	// conectar mongoDB
-	static MongoClient client = MongoClients
+	private static MongoClient client = MongoClients
 			.create("mongodb+srv://testUser:BolaRebola@projesgrupo18.4wd7mpv.mongodb.net/?retryWrites=true&w=majority");
 
-	static MongoDatabase db = client.getDatabase("schedule");
+	private static MongoDatabase db = client.getDatabase("schedule");
 
-	static MongoCollection<org.bson.Document> collection = db.getCollection("week");
+	private static MongoCollection<org.bson.Document> collection = db.getCollection("week");
 
-	public static void main(String[] args) throws IOException {
-		importData("madalena.json");
-		outputData("madalena");
+	public MongoDB() {
+		
+	}
+	
+	public static void main(String [] args) throws IOException {
+		importData("alexandra.json");
+		System.out.println("aaa");
+	}
+	
+	public ArrayList<User> getUsers() throws IOException {
+		ArrayList<String> userIDs = new ArrayList<>();
+		FindIterable<Document> iterobj = collection.find();
+		MongoCursor<Document> itr = iterobj.iterator();
+		while(itr.hasNext()) {
+			Document doc = itr.next();
+			String s = doc.getString("_id");
+			userIDs.add(s);
+		}
+		ArrayList<User> users = new ArrayList<>();
+		for(String s: userIDs) {
+			File f = outputData(s);
+			Random rand = new Random();
+			float r = rand.nextFloat();
+			float g = rand.nextFloat();
+			float b = rand.nextFloat();
+			
+			User user = new User(s,f,new Color(r,g,b));
+			users.add(user);
+		}
+		return users;
 	}
 
 
@@ -71,6 +79,10 @@ public class MongoDB {
 
 			// Print the documents using iterators
 			MongoCursor<Document> itr = iterobj.iterator();
+			if(!itr.hasNext()) {
+				collection.insertOne(sampleDoc);
+				System.out.println("Documento inserido");
+			}
 			while (itr.hasNext()) {
 				
 				Document doc = itr.next();
@@ -80,7 +92,7 @@ public class MongoDB {
 					Bson filter = Filters.eq("_id", n[0]);
 					collection.findOneAndReplace(filter, sampleDoc);
 					System.out.println("Documento substituido");
-				} else if (!itr.hasNext()) {			
+				} else if(!itr.hasNext()){			
 					collection.insertOne(sampleDoc);
 					System.out.println("Documento inserido");
 				}
@@ -93,7 +105,7 @@ public class MongoDB {
 		}
 
 	}
-	public static File outputData(String name) throws IOException {
+	public File outputData(String name) throws IOException {
 		FindIterable<Document> iterobj = collection.find();
 
 		// Print the documents using iterators
@@ -105,9 +117,9 @@ public class MongoDB {
 			String s = doc.toString();
 
 			if (s.contains("_id=" + name)) {
-				json=s;
-				System.out.println(json);
+				json=doc.getString("name");
 			} 
+		
 		}
 		
 		FileWriter fw= new FileWriter(name+".json");
