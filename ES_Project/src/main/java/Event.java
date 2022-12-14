@@ -1,12 +1,25 @@
-
+/**
+ * 
+ * Creates an Event specifically built to insert in a json file
+ *
+ */
 public class Event {
-	// Event parameters
+	
 	private String name;
+	
 	private String dateStart;
+	
 	private String dateEnd;
+	
 	private String username;
 
-	//Constructor
+	/**
+	 * Event constructor
+	 * @param name
+	 * @param dateStart
+	 * @param dateEnd
+	 * @param username
+	 */
 	public Event(String name, String dateStart, String dateEnd, String username) {
 		this.name = name;
 		this.dateStart = dateStart;
@@ -14,36 +27,55 @@ public class Event {
 		this.username = username;
 	}
  
-	//Default Constructor
+	/**
+	 * Default constructor
+	 */
 	public Event() {
 	}
 
-	// username getter
+	/**
+	 * Gets the username
+	 * @return String Username
+	 */
 	public String getUsername() {
 		return username;
 	}
 
-	// username setter
+	/**
+	 * Sets the username
+	 * @param username
+	 */
 	public void setUsername(String username) {
 		this.username = username;
 	}
 
-	//name getter
+/**
+ * Gets the Name
+ * @return String name
+ */
 	public String getName() {
 		return name;
 	}
 
-	//dateStart getter
+	/**
+	 * Gets start date
+	 * @return String start date
+	 */
 	public String getDateStart() {
 		return dateStart;
 	}
 
-	//dateEnd getter
+	/**
+	 * Gets the end date
+	 * @return String End date
+	 */
 	public String getDateEnd() {
 		return dateEnd;
 	}
 
-	//toString method
+	/**
+	 * To string method
+	 */
 	public String toString() {
 		return "[" + name + " " + dateStart + " " + dateEnd + " " + username + "]";
 	}

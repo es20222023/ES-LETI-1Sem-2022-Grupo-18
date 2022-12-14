@@ -10,9 +10,20 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-
+/**
+ * 
+ * Class to fill the calendar event lists
+ *
+ */
 public class FillCalendar {
-	
+	/**
+	 * Returns the Event List when a link is given
+	 * @param link
+	 * @param user
+	 * @return Events List
+	 * @throws ParseException
+	 * @throws IOException
+	 */
 	public static ArrayList<Event> returnEventListFromLink(String link, String user) throws ParseException, IOException {
 
 		final ObjectMapper objectMapper = new ObjectMapper();
@@ -37,6 +48,12 @@ public class FillCalendar {
 		return eventList;
 	}
 	
+	/**
+	 * Returns a Event list when a file is given
+	 * @param file
+	 * @param user
+	 * @return Events list
+	 */
 	public static ArrayList<Event> returnEventListFromFile(File file, String user){
 		final ObjectMapper objectMapper = new ObjectMapper();
 

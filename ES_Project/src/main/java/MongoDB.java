@@ -17,7 +17,11 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-
+/**
+ * 
+ * Class to deal with MOngoDB funtions
+ *
+ */
 public class MongoDB {
 
 	// conectar mongoDB
@@ -28,10 +32,18 @@ public class MongoDB {
 
 	private static MongoCollection<org.bson.Document> collection = db.getCollection("week");
 
+	/**
+	 * Constructor
+	 */
 	public MongoDB() {
 		
 	}
 	
+	/**
+	 * Gets users list form db
+	 * @return list with users
+	 * @throws IOException
+	 */
 	public ArrayList<User> getUsers() throws IOException {
 		ArrayList<String> userIDs = new ArrayList<>();
 		FindIterable<Document> iterobj = collection.find();
@@ -56,6 +68,11 @@ public class MongoDB {
 	}
 
 
+	/**
+	 * Imports a file to DB
+	 * @param filename
+	 * @throws IOException
+	 */
 	public static void importData(String filename) throws IOException {
 
 		BufferedReader reader = new BufferedReader(new FileReader(filename));
@@ -100,6 +117,13 @@ public class MongoDB {
 		}
 
 	}
+	
+	/**
+	 * Exports a file from DB
+	 * @param name
+	 * @return a File from DB
+	 * @throws IOException
+	 */
 	public File outputData(String name) throws IOException {
 		FindIterable<Document> iterobj = collection.find();
 

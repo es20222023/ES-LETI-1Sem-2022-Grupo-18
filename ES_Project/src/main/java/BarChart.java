@@ -5,12 +5,18 @@ import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
-
+/**
+ * Represents a Bar Chart that can be created adding to a dataset many informations
+ */
 public class BarChart extends JFrame {
-
-	private static final long serialVersionUID = 1L;
-	private DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 	
+	private static final long serialVersionUID = 1L;
+	
+	private DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+	/**
+	 * Constructor
+	 * @param appTitle
+	 */
 	public BarChart(String appTitle) {
 		super(appTitle);
 		// Create chart
@@ -23,6 +29,12 @@ public class BarChart extends JFrame {
 		setContentPane(panel);
 	}
 
+	/**
+	 * Adds to Data Set the values
+	 * @param value
+	 * @param user
+	 * @param day
+	 */
 	public void addToDataSet(double value, String user, String day) {
 		dataset.addValue(value, user, day);
 	}

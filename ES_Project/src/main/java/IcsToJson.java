@@ -13,18 +13,33 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
+/**
+ * 
+ * Class with functions that deal with transforming webcal link to json file
+ *
+ */
 public class IcsToJson {
 	
 	//Url
 	private URL url;
 
 	//Constructor
+	/**
+	 * Creates new Class
+	 * @param link
+	 * @throws MalformedURLException
+	 */
 	public IcsToJson(String link) throws MalformedURLException {
 		this.url = new URL(link.replace("webcal:", "https:"));
 	}
 
 	//Get json from ics file
+	/**
+	 * Gets the json from url and returns a file with it
+	 * @param user
+	 * @return A file with json 
+	 * @throws IOException
+	 */
 	public File getJson(String user) throws IOException {
 
 		Files.copy(url.openStream(), Paths.get("icsfile.txt"), REPLACE_EXISTING);
@@ -83,6 +98,12 @@ public class IcsToJson {
 	}
 
 	//List Event from a user
+	/**
+	 * Lists the events from a user
+	 * @param user
+	 * @return
+	 * @throws FileNotFoundException
+	 */
 	public ArrayList<Event> listEvents(String user) throws FileNotFoundException {
 
 		ArrayList<Event> list = new ArrayList<>();
