@@ -44,7 +44,6 @@ class JFrameToPDFTest {
 		JFrameToPDF.ToPDF(frm);
 	}
 	void test() {
-		//fail("Not yet implemented");
 	}
 
 }
