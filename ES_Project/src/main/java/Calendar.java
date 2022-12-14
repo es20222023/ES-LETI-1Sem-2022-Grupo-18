@@ -39,7 +39,7 @@ public abstract class Calendar extends JComponent {
 		this(new ArrayList<>());
 	}
 
-	Calendar(ArrayList<CalendarEvent> events) {
+	public Calendar(ArrayList<CalendarEvent> events) {
 		this.events = events;
 		setupEventListeners();
 		setupTimer();

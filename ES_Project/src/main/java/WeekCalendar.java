@@ -14,7 +14,7 @@ public class WeekCalendar extends Calendar {
     }
 
     @Override
-    protected boolean dateInRange(LocalDate date) {
+    public boolean dateInRange(LocalDate date) {
         return Week.getStartOfWeek(date).equals(week.getDay(DayOfWeek.MONDAY));
     }
 
