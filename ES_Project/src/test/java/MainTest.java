@@ -13,10 +13,10 @@ public class MainTest {
 		assertTrue(true);
 		assertFalse(false);
 		assertEquals(10,10);
-		boolean [] b1 = {true,true};
-		boolean [] b2 = {true,true};
+		Object [] b1 = {true,true};
+		Object [] b2 = {true,true};
 		
-		//assertArrayEquals(b1, b2);
+		assertArrayEquals(b1, b2);
 	
 	}
 
