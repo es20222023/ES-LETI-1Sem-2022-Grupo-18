@@ -90,7 +90,7 @@ public abstract class Calendar extends JComponent {
 		return false;
 	}
 
-	private boolean checkCalendarEmptyClick(Point p) {
+	public boolean checkCalendarEmptyClick(Point p) {
 		final double x0 = dayToPixel(getStartDay());
 		final double x1 = dayToPixel(getEndDay()) + dayWidth;
 		final double y0 = timeToPixel(START_TIME);

@@ -32,11 +32,6 @@ public class MongoDB {
 		
 	}
 	
-	public static void main(String [] args) throws IOException {
-		importData("alexandra.json");
-		System.out.println("aaa");
-	}
-	
 	public ArrayList<User> getUsers() throws IOException {
 		ArrayList<String> userIDs = new ArrayList<>();
 		FindIterable<Document> iterobj = collection.find();

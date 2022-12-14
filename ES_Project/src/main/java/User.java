@@ -125,5 +125,12 @@ public class User {
 	public String toString() {
 		return userName;
 	}
+	
+	public boolean equals(Object a) {
+		if(((User) a).getUserName().equals(this.getUserName())){
+			return true;
+		}
+		return false;
+	}
 
 }

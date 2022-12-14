@@ -17,7 +17,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 public class JFrameToPDF {
 
 	public static void JFrameToPDF(JFrame frame) throws IOException, DocumentException {
-
+		
 		//Cria��o da img
 		//JFrame frame = new JFrame();
 		//frame.setSize(200, 200);

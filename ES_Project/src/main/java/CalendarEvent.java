@@ -14,7 +14,6 @@ public class CalendarEvent {
     private String text;
     private Color color;
     private User user;
-    private int numberOfSobreposicoes;
     private boolean visible = true;
 
     public CalendarEvent(User user,LocalDate date, LocalTime start, LocalTime end, String text) {
@@ -37,10 +36,7 @@ public class CalendarEvent {
     public void setVisible(boolean a) {
     	this.visible = a;
     }
-
-    public int getNumberOfSobreposicoes(){
-    	return numberOfSobreposicoes;
-    }
+    
     public User getUser() {
     	return user;
     }

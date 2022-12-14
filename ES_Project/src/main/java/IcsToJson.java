@@ -73,7 +73,7 @@ public class IcsToJson {
 		File finalFile = new File(fileName);
 		if (!finalFile.exists()) {
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
-			ArrayList<Event> eventos = listaEventos(user);
+			ArrayList<Event> eventos = listEvents(user);
 			String json = gson.toJson(eventos);
 			FileWriter writer = new FileWriter(fileName);
 			writer.write(json);
@@ -83,7 +83,7 @@ public class IcsToJson {
 	}
 
 	//List Event from a user
-	public ArrayList<Event> listaEventos(String user) throws FileNotFoundException {
+	public ArrayList<Event> listEvents(String user) throws FileNotFoundException {
 
 		ArrayList<Event> list = new ArrayList<>();
 		Scanner scan = new Scanner(new File("agenda.txt"));
