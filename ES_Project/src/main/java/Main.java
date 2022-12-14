@@ -30,8 +30,5 @@ public class Main {
 				}
 			}
 		});
-		
-		//CalendarEngine calendar = new CalendarEngine();
-		//calendar.startCalendar();
 	}
 }

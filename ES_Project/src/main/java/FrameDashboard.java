@@ -26,7 +26,7 @@ public class FrameDashboard extends JFrame {
 	private PanelHome PanelHome2;
 	private ImportPanel ImportPanel2;
 	private ViewPanel ViewPanel2;
-	private ExportPanel ExportPanel2;
+	
 	/**
 	 * Launch the application.
 	 */
@@ -61,7 +61,6 @@ public class FrameDashboard extends JFrame {
 		PanelHome2 = new PanelHome();
 		ImportPanel2= new ImportPanel();
 		ViewPanel2 = new ViewPanel();
-		ExportPanel2 = new ExportPanel();
 		
 		//Menu Panel
 		JPanel MenuPanel = new JPanel();
@@ -186,17 +185,20 @@ public class FrameDashboard extends JFrame {
 		
 		panelMain.add(PanelHome2);
 		panelMain.add(ImportPanel2);
-		panelMain.add(ExportPanel2);
 		panelMain.add(ViewPanel2);
 		
 		menuClicked(PanelHome2);
 	}
 	
+	/**
+	 * Show only the menu that was clicked
+	 * @param panel
+	 */
 	public void menuClicked(JPanel panel) {
 		PanelHome2.setVisible(false);
 		ImportPanel2.setVisible(false);
 		ViewPanel2.setVisible(false);
-		ExportPanel2.setVisible(false);
+		
 		
 		panel.setVisible(true);
 		

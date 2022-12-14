@@ -24,6 +24,7 @@ public class ImportPanel extends JPanel {
 	private JTextField textField_submit;
 	private JLabel lblSubmitMessage;
 	private JPanel pnlBtnSubmit;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Create the panel.
@@ -37,7 +38,7 @@ public class ImportPanel extends JPanel {
 		panel_1.setLayout(null);
 		panel_1.setBorder(new LineBorder(new Color(255, 255, 255)));
 		panel_1.setBackground(Color.WHITE);
-		panel_1.setBounds(108, 83, 300, 40);
+		panel_1.setBounds(107, 128, 300, 40);
 		add(panel_1);
 		
 		txtUsername = new JTextField();
@@ -70,7 +71,7 @@ public class ImportPanel extends JPanel {
 		panel_1_1.setLayout(null);
 		panel_1_1.setBorder(new LineBorder(new Color(255, 255, 255)));
 		panel_1_1.setBackground(Color.WHITE);
-		panel_1_1.setBounds(108, 163, 300, 40);
+		panel_1_1.setBounds(107, 208, 300, 40);
 		add(panel_1_1);
 		
 		txtURL = new JTextField();
@@ -96,7 +97,7 @@ public class ImportPanel extends JPanel {
 		txtURL.setFont(new Font("Arial", Font.PLAIN, 13));
 		txtURL.setColumns(10);
 		txtURL.setBorder(new LineBorder(new Color(255, 255, 255)));
-		txtURL.setBounds(6, 6, 229, 26);
+		txtURL.setBounds(6, 6, 267, 26);
 		panel_1_1.add(txtURL);
 		
 		pnlBtnSubmit = new JPanel();
@@ -104,7 +105,7 @@ public class ImportPanel extends JPanel {
 		pnlBtnSubmit.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		pnlBtnSubmit.setBorder(new LineBorder(new Color(255, 255, 255)));
 		pnlBtnSubmit.setBackground(Color.GRAY);
-		pnlBtnSubmit.setBounds(123, 292, 300, 40);
+		pnlBtnSubmit.setBounds(107, 296, 300, 40);
 		add(pnlBtnSubmit);
 		
 		textField_submit = new JTextField();
@@ -158,6 +159,12 @@ public class ImportPanel extends JPanel {
 		lblSubmitMessage.setForeground(new Color(255, 255, 255));
 		lblSubmitMessage.setBounds(472, 268, 283, 16);
 		add(lblSubmitMessage);
+		
+		lblNewLabel = new JLabel("Import Calendar:");
+		lblNewLabel.setFont(new Font("Dialog", Font.ITALIC, 20));
+		lblNewLabel.setForeground(new Color(0, 128, 128));
+		lblNewLabel.setBounds(122, 65, 267, 31);
+		add(lblNewLabel);
 
 	}
 }	
