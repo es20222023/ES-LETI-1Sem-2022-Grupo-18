@@ -9,13 +9,9 @@ import java.text.ParseException;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JSplitPane;
-import javax.swing.JToolBar;
-import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 
 import com.itextpdf.text.DocumentException;
@@ -149,27 +145,7 @@ public class FrameDashboard extends JFrame {
 		lblViewCalendars.setBounds(83, 6, 65, 35);
 		ViewPanel.add(lblViewCalendars);
 		
-		JPanel ExportPanel = new JPanel();
-		ExportPanel.addMouseListener(new PanelButtomMouseAdapter(ExportPanel) {
-			@Override
-			public void mouseClicked(MouseEvent e){
-				menuClicked(ExportPanel2);
-			}
-		});
-		ExportPanel.setBorder(new LineBorder(new Color(255, 255, 255)));
-		ExportPanel.setToolTipText("");
-		ExportPanel.setForeground(Color.WHITE);
-		ExportPanel.setBackground(new Color(0, 128, 128));
-		ExportPanel.setBounds(0, 172, 219, 47);
-		MenuPanel.add(ExportPanel);
-		ExportPanel.setLayout(null);
-		
-		JLabel lblExport = new JLabel("Export");
-		lblExport.setForeground(Color.WHITE);
-		lblExport.setFont(new Font("Dialog", Font.PLAIN, 16));
-		lblExport.setBounds(72, 6, 65, 35);
-		ExportPanel.add(lblExport);
-		
+		//SignOutPanel
 		JPanel signOutPane = new JPanel();
 		signOutPane.addMouseListener(new PanelButtomMouseAdapter(signOutPane) {
 			@Override
@@ -187,7 +163,7 @@ public class FrameDashboard extends JFrame {
 		signOutPane.setToolTipText("");
 		signOutPane.setForeground(Color.WHITE);
 		signOutPane.setBackground(new Color(0, 128, 128));
-		signOutPane.setBounds(0, 218, 219, 47);
+		signOutPane.setBounds(0, 315, 219, 47);
 		MenuPanel.add(signOutPane);
 		signOutPane.setLayout(null);
 		
