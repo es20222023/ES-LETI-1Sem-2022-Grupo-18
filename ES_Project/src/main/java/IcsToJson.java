@@ -79,6 +79,7 @@ public class IcsToJson {
 				String l = "\n" + description + "\n" + startDate + "\n" + endDate + "\n \n";
 				writer.write(l);
 				writer.close();
+				
 			}
 
 		}
