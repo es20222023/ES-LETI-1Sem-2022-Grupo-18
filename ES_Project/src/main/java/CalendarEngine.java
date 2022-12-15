@@ -1,20 +1,11 @@
 import javax.swing.*;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.itextpdf.text.DocumentException;
-
 import java.awt.*;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.text.Normalizer;
 import java.text.ParseException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
@@ -143,7 +134,7 @@ public class CalendarEngine {
 	
 	/**
 	 * Function that will be called if a checkbox change state
-	 * @param cb
+	 * @param cb CheckBox to check
 	 * @throws ParseException
 	 * @throws IOException
 	 */
@@ -206,7 +197,7 @@ public class CalendarEngine {
 
 	/**
 	 * Function that will open a new frame to give new event informations
-	 * @param user
+	 * @param user User to create a new Event Frame
 	 */
 	public void newEventFrame(User user) {
 		String dates[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17",
@@ -356,17 +347,17 @@ public class CalendarEngine {
 
 	/**
 	 * Function called if "submit" button is pressed
-	 * @param user
-	 * @param nameText
-	 * @param day
-	 * @param month
-	 * @param year
-	 * @param startHour
-	 * @param endHour
-	 * @param descriptionArea
-	 * @param output
-	 * @param res
-	 * @param resadd
+	 * @param user User to the event 
+	 * @param nameText Name of the event 
+	 * @param day day of the event
+	 * @param month month of the event
+	 * @param year year of the event
+	 * @param startHour start hour of the event
+	 * @param endHour end hour of the event
+	 * @param descriptionArea description area of the event
+	 * @param output output area
+	 * @param res label
+	 * @param resadd label
 	 * @throws ParseException
 	 * @throws IOException
 	 */
@@ -419,16 +410,16 @@ public class CalendarEngine {
 
 	/**
 	 * function called if "reset" button is called
-	 * @param nameText
-	 * @param day
-	 * @param month
-	 * @param year
-	 * @param startHour
-	 * @param endHour
-	 * @param descriptionArea
-	 * @param output
-	 * @param res
-	 * @param resadd
+	 * @param nameText event name
+	 * @param day event day
+	 * @param month event month
+	 * @param year event year
+	 * @param startHour event start hour
+	 * @param endHour event end hour
+	 * @param descriptionArea event description
+	 * @param output output area
+	 * @param res label
+	 * @param resadd label
 	 */
 	public void resetPressed(JTextField nameText, JComboBox<String> day, JComboBox<String> month,
 			JComboBox<String> year, JComboBox<String> startHour, JComboBox<String> endHour, JTextArea descriptionArea,
@@ -448,9 +439,9 @@ public class CalendarEngine {
 
 	/**
 	 * Function to check if a new event can be added
-	 * @param user
-	 * @param ce
-	 * @return
+	 * @param user User to check avaliability
+	 * @param ce Event to check
+	 * @return true, if user is avaliable, false if not
 	 * @throws ParseException
 	 * @throws IOException
 	 */
@@ -473,8 +464,8 @@ public class CalendarEngine {
 
 	/**
 	 * Pass String to LocalTime
-	 * @param a
-	 * @return
+	 * @param a string to convert
+	 * @return LocalTime of string
 	 */
 	public static LocalTime toTime(String a) {
 		LocalTime lt = LocalTime.of(untilDots(a), afterDots(a));
@@ -483,7 +474,7 @@ public class CalendarEngine {
 
 	/**
 	 * Get a string until ":"
-	 * @param a
+	 * @param a String to substring
 	 * @return String with all information until character ":"
 	 */
 	public static int untilDots(String a) {
@@ -494,7 +485,7 @@ public class CalendarEngine {
 	
 	/**
 	 * Get a string after ":"
-	 * @param a
+	 * @param a String to substring
 	 * @return String with all information after ":" character
 	 */
 	public static int afterDots(String a) {
@@ -503,7 +494,6 @@ public class CalendarEngine {
 		return Integer.parseInt(b);
 	}
 
-	// Passing userNames list to array
 	/**
 	 * Passing userNames list to array
 	 * @return array with all usernames

@@ -70,7 +70,7 @@ public class MongoDB {
 
 	/**
 	 * Imports a file to DB
-	 * @param filename
+	 * @param filename name file
 	 * @throws IOException
 	 */
 	public static void importData(String filename) throws IOException {
@@ -120,7 +120,7 @@ public class MongoDB {
 	
 	/**
 	 * Exports a file from DB
-	 * @param name
+	 * @param name name
 	 * @return a File from DB
 	 * @throws IOException
 	 */

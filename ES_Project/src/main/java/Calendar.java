@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -13,11 +12,13 @@ import java.time.format.TextStyle;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Locale;
+
 /**
- * Full Calendar with many operations
  * 
+ * Full calendar class
  *
  */
+
 public abstract class Calendar extends JComponent {
 	
 	protected static final LocalTime START_TIME = LocalTime.of(8, 0);
@@ -32,8 +33,6 @@ public abstract class Calendar extends JComponent {
 	
 	protected static final int TIME_COL_WIDTH = 100;
 
-	// An estimate of the width of a single character (not exact but good
-	// enough)
 	private static final int FONT_LETTER_PIXEL_WIDTH = 7;
 	
 	private ArrayList<CalendarEvent> events;
@@ -53,7 +52,7 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Creates a calendar with given events list
-	 * @param events
+	 * @param events list of events to put in calendar
 	 */
 	public Calendar(ArrayList<CalendarEvent> events) {
 		this.events = events;
@@ -63,9 +62,9 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Rounds the time
-	 * @param time
-	 * @param minutes
-	 * @return
+	 * @param time Time to round
+	 * @param minutes minutes to round
+	 * @return Rounded time
 	 */
 	public static LocalTime roundTime(LocalTime time, int minutes) {
 		LocalTime t = time;
@@ -96,14 +95,14 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Checks if the date is in range
-	 * @param date
+	 * @param date Date to check
 	 * @return true, if date is in range, false if date isn't in range
 	 */
 	protected abstract boolean dateInRange(LocalDate date);
 
 	/**
 	 * Checks the event click
-	 * @param p
+	 * @param p Point to check
 	 * @return True if p is inside limits, false if not
 	 */
 	private boolean checkCalendarEventClick(Point p) {
@@ -127,7 +126,7 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Checks the event click
-	 * @param p
+	 * @param p Point to check
 	 * @return True if p is inside limits, false if not
 	 */
 	public boolean checkCalendarEmptyClick(Point p) {
@@ -149,7 +148,7 @@ public abstract class Calendar extends JComponent {
 	// CalendarEventClick methods
 	/**
 	 * Adds click listener
-	 * @param l
+	 * @param l Calendar Listener to add
 	 */
 	public void addCalendarEventClickListener(CalendarEventClickListener l) {
 		listenerList.add(CalendarEventClickListener.class, l);
@@ -157,7 +156,7 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Removes click listener
-	 * @param l
+	 * @param l Calendar Listener to remove
 	 */
 	public void removeCalendarEventClickListener(CalendarEventClickListener l) {
 		listenerList.remove(CalendarEventClickListener.class, l);
@@ -166,7 +165,7 @@ public abstract class Calendar extends JComponent {
 	/**
 	 * Notify all listeners that have registered interest for
 	 * notification on this event type.
-	 * @param calendarEvent
+	 * @param calendarEvent CalendarEvent to fire
 	 */
 	private void fireCalendarEventClick(CalendarEvent calendarEvent) {
 		// Guaranteed to return a non-null array
@@ -182,10 +181,9 @@ public abstract class Calendar extends JComponent {
 		}
 	}
 
-	// CalendarEmptyClick methods
 	/**
 	 * Adds Empty click listener
-	 * @param l
+	 * @param l Empty Click Listener to add 
 	 */
 	public void addCalendarEmptyClickListener(CalendarEmptyClickListener l) {
 		listenerList.add(CalendarEmptyClickListener.class, l);
@@ -193,7 +191,7 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Removes Empty click listener
-	 * @param l
+	 * @param l Empty click listener to remove
 	 */
 	public void removeCalendarEmptyClickListener(CalendarEmptyClickListener l) {
 		listenerList.remove(CalendarEmptyClickListener.class, l);
@@ -201,7 +199,7 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Fires empty click
-	 * @param dateTime
+	 * @param dateTime Date Time to fire
 	 */
 	private void fireCalendarEmptyClick(LocalDateTime dateTime) {
 		Object[] listeners = listenerList.getListenerList();
@@ -242,14 +240,14 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Gives x val of left most pixel for day col
-	 * @param dayOfWeek
-	 * @return
+	 * @param dayOfWeek day that we want to get pixels
+	 * @return Number of pixels in a day
 	 */
 	protected abstract double dayToPixel(DayOfWeek dayOfWeek);
 
 	/**
 	 * 
-	 * @param time
+	 * @param time Time to convert in pixels
 	 * @return Value in pixels that corresponds to certain minutes
 	 */
 	private double timeToPixel(LocalTime time) {
@@ -258,7 +256,7 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * 
-	 * @param y
+	 * @param y Pixels to convert in LocalTime
 	 * @return Value in Time that corresponds to y pixels
 	 */
 	private LocalTime pixelToTime(double y) {
@@ -268,7 +266,7 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * 
-	 * @param x
+	 * @param x Pixels to convert in day
 	 * @return day that corresponds to x pixels
 	 */
 	private DayOfWeek pixelToDay(double x) {
@@ -285,10 +283,6 @@ public abstract class Calendar extends JComponent {
 	}
 
 	@Override
-	/**
-	 * Paints component
-	 * @param g
-	 */
 	protected void paintComponent(Graphics g) {
 		calculateScaleVars();
 		g2 = (Graphics2D) g;
@@ -520,7 +514,7 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Add single event
-	 * @param event
+	 * @param event Event to add
 	 */
 	public void addEvent(CalendarEvent event) {
 		events.add(event);
@@ -529,8 +523,8 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Remove Single Event
-	 * @param event
-	 * @return
+	 * @param event Event to remove
+	 * @return Removed event
 	 */
 	public boolean removeEvent(CalendarEvent event) {
 		boolean removed = events.remove(event);
@@ -540,7 +534,7 @@ public abstract class Calendar extends JComponent {
 	
 	/**
 	 * Sets the list of events
-	 * @param events
+	 * @param events events to set
 	 */
 	public void setEvents(ArrayList<CalendarEvent> events) {
 		this.events = events;
@@ -549,10 +543,10 @@ public abstract class Calendar extends JComponent {
 
 	/**
 	 * Draw events text
-	 * @param g
-	 * @param text
-	 * @param x
-	 * @param y
+	 * @param g Graphics to draw
+	 * @param text Text to draw
+	 * @param x x component of position
+	 * @param y y component of position
 	 */
 	private void drawString(Graphics g, String text, int x, int y) {
 		int lineHeight = g.getFontMetrics().getHeight();

@@ -12,7 +12,7 @@ import com.itextpdf.text.DocumentException;
 public class Main {
 	/**
 	 * 
-	 * @param args
+	 * @param args arguments to create main function
 	 * @throws ParseException
 	 * @throws IOException
 	 * @throws DocumentException

@@ -1,5 +1,9 @@
 import javax.swing.JPanel;
-
+/**
+ * 
+ * Class to create new ViewPanel
+ *
+ */
 public class ViewPanel extends JPanel {
 
 	/**

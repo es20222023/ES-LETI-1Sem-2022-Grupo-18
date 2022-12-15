@@ -14,11 +14,11 @@ public class Event {
 	private String username;
 
 	/**
-	 * Event constructor
-	 * @param name
-	 * @param dateStart
-	 * @param dateEnd
-	 * @param username
+	 * Contructs a new Event
+	 * @param name Event name
+	 * @param dateStart event start
+	 * @param dateEnd event end
+	 * @param username event username
 	 */
 	public Event(String name, String dateStart, String dateEnd, String username) {
 		this.name = name;
@@ -43,7 +43,7 @@ public class Event {
 
 	/**
 	 * Sets the username
-	 * @param username
+	 * @param username username to set
 	 */
 	public void setUsername(String username) {
 		this.username = username;

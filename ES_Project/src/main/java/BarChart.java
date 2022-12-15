@@ -4,19 +4,19 @@ import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
-
-
 /**
- * Represents a Bar Chart that can be created adding to a dataset many informations
+ * 
+ * Class to create a Bar Chart
+ *
  */
 public class BarChart extends JFrame {
 	
 	private static final long serialVersionUID = 1L;
-	
 	private DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 	/**
-	 * Constructor
-	 * @param appTitle
+	 * Constructs a BarChart to represent the information of avaliability 
+	 * from a Calendar
+	 * @param appTitle Title to give to the app
 	 */
 	public BarChart(String appTitle) {
 		super(appTitle);

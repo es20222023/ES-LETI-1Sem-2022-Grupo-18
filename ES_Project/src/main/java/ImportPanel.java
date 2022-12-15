@@ -15,9 +15,11 @@ import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 import javax.swing.JPasswordField;
 import javax.swing.SwingConstants;
-
-
-
+/**
+ * 
+ * Class to create new login panel
+ *
+ */
 public class ImportPanel extends JPanel {
 	private JTextField txtUsername;
 	private JTextField txtURL;

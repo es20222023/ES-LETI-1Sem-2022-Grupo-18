@@ -7,7 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class MainTest {
-
+	static Main m;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		assertTrue(true);
@@ -17,7 +17,7 @@ public class MainTest {
 		Object [] b2 = {true,true};
 		
 		assertArrayEquals(b1, b2);
-	
+		m = new Main();
 	}
 
 	@AfterClass

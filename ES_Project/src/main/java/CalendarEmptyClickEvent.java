@@ -12,8 +12,8 @@ public class CalendarEmptyClickEvent extends AWTEvent {
 
     /**
      * Creates a single Event Click Listener
-     * @param source
-     * @param dateTime
+     * @param source Source object
+     * @param dateTime DateTime 
      */
     public CalendarEmptyClickEvent(Object source, LocalDateTime dateTime) {
         super(source, 0);
@@ -22,7 +22,7 @@ public class CalendarEmptyClickEvent extends AWTEvent {
 
     /**
      * Gets the LocalDateTime
-     * @return dateTime
+     * @return dateTime 
      */
     public LocalDateTime getDateTime() {
         return dateTime;

@@ -18,9 +18,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class FillCalendar {
 	/**
 	 * Returns the Event List when a link is given
-	 * @param link
-	 * @param user
-	 * @return Events List
+	 * @param link link to use
+	 * @param user user
+	 * @return Events List 
 	 * @throws ParseException
 	 * @throws IOException
 	 */
@@ -50,8 +50,8 @@ public class FillCalendar {
 	
 	/**
 	 * Returns a Event list when a file is given
-	 * @param file
-	 * @param user
+	 * @param file user file
+	 * @param user username
 	 * @return Events list
 	 */
 	public static ArrayList<Event> returnEventListFromFile(File file, String user){

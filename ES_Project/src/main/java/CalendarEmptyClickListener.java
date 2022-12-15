@@ -8,5 +8,9 @@ import java.util.EventListener;
  */
 public interface CalendarEmptyClickListener extends EventListener {
     // Event dispatch methods
+	/**
+	 * 
+	 * @param e CalendarEmptyClickEvent
+	 */
     void calendarEmptyClick(CalendarEmptyClickEvent e);
 }

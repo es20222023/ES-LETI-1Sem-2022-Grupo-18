@@ -1,5 +1,3 @@
-
-
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,7 +12,7 @@ public class Week {
 
      /**
      * Gets week variables from any date (can be within week)
-     * @param date
+     * @param date date
      */
     public Week(LocalDate date) {
         days = new ArrayList<>();
@@ -26,7 +24,7 @@ public class Week {
     }
 /**
  * Gets the satrt of the Week
- * @param date
+ * @param date date
  * @return LocalDate
  */
     public static LocalDate getStartOfWeek(LocalDate date) {
@@ -39,8 +37,8 @@ public class Week {
     
     /**
      * Gets LocalDate from DayOfWeek
-     * @param dayOfWeek
-     * @return
+     * @param dayOfWeek day of the week
+     * @return  returns localdate
      */
     public LocalDate getDay(DayOfWeek dayOfWeek) {
         // DayOfWeek enum starts with monday == 1

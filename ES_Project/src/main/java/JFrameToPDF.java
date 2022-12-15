@@ -19,8 +19,8 @@ import com.itextpdf.text.pdf.PdfWriter;
 public class JFrameToPDF {
 	/**
 	 * Generates a PDF with a given frame
-	 * @param frame
-	 * @throws IOException
+	 * @param frame frame to pass to PDF
+	 * @throws IOException 
 	 * @throws DocumentException
 	 */
 	public static void ToPDF(JFrame frame) throws IOException, DocumentException {

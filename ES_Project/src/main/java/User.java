@@ -23,9 +23,9 @@ public class User {
 
 	/**
 	 * To get a user using a link
-	 * @param userName
-	 * @param link
-	 * @param colorPreference
+	 * @param userName username
+	 * @param link link
+	 * @param colorPreference color preference
 	 */
 	public User(String userName, String link, Color colorPreference) {
 		this.link = link;
@@ -35,9 +35,9 @@ public class User {
 	
 	/**
 	 * To get a user giving a File
-	 * @param userName
-	 * @param userFile
-	 * @param colorPreference
+	 * @param userName username
+	 * @param userFile user file
+	 * @param colorPreference user color
 	 */
 	public User(String userName, File userFile, Color colorPreference) {
 		this.userName = userName;
@@ -55,7 +55,7 @@ public class User {
 	
 	/**
 	 * Sets the user file
-	 * @param f
+	 * @param f file to set
 	 */
 	public void setUserFile(File f) {
 		this.userFile = f;
@@ -133,7 +133,7 @@ public class User {
 
 	/**
 	 * Removes "TZ" from String
-	 * @param a
+	 * @param a String to substring
 	 * @return String without "TZ"
 	 */
 	public static String removeTZ(String a) {
@@ -144,7 +144,7 @@ public class User {
 
 	/**
 	 * COnverts string in LocalDateTime
-	 * @param a
+	 * @param a String to convert
 	 * @return LocalDateTime
 	 * @throws ParseException
 	 */
@@ -158,9 +158,9 @@ public class User {
 
 	/**
 	 * Inserts in String a character all period characters
-	 * @param text
-	 * @param insert
-	 * @param period
+	 * @param text text to insert
+	 * @param insert characters to insert
+	 * @param period period characters
 	 * @return String
 	 */
 	public static String insertPeriodically(String text, String insert, int period) {
@@ -181,7 +181,7 @@ public class User {
 
 	/**
 	 * GIves all information until "-"
-	 * @param str
+	 * @param str String to cut
 	 * @return String
 	 */
 	public static String cutAfterTrace(String str) {

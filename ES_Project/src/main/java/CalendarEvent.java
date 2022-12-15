@@ -36,20 +36,26 @@ public class CalendarEvent {
     
     private boolean visible = true;
 
+    /**
+     * Creates a CalendarEvent with default color
+     * @param user Event user
+     * @param date event date
+     * @param start event start
+     * @param end event end
+     * @param text event text
+     */
     public CalendarEvent(User user,LocalDate date, LocalTime start, LocalTime end, String text) {
         this(user, date, start, end, text, DEFAULT_COLOR);
     }
 
     /**
-     * 
-     * @param user
-     * @param date
-     * @param start
-     * @param end
-     * @param text
-     * @param color
-     * 
      * Creates a new CalendarEvent with a especific color
+     * @param user event user
+     * @param date event date
+     * @param start event start
+     * @param end event end
+     * @param text event text
+     * @param color event color
      */
     public CalendarEvent(User user,LocalDate date, LocalTime start, LocalTime end, String text, Color color) {
     	this.user = user;
@@ -68,17 +74,24 @@ public class CalendarEvent {
     }
     /**
      * Sets the visibility
-     * @param a
+     * @param a boolean value to atribute
      */
     public void setVisible(boolean a) {
     	this.visible = a;
     }
     /**
      * Gets the user
-     * @return User
+     * @return event user
      */
     public User getUser() {
     	return user;
+    }
+    /**
+     * Sets the event color
+     * @param color color to set
+     */
+    public void setColor(Color color) {
+    	this.color = color;
     }
     /**
      * Gets the event Date
@@ -89,7 +102,7 @@ public class CalendarEvent {
     }
 /**
  * Sets a new Date for the event
- * @param date
+ * @param date date to set
  */
     public void setDate(LocalDate date) {
         this.date = date;
@@ -103,7 +116,7 @@ public class CalendarEvent {
     }
     /**
      * Sets the new event start time
-     * @param start
+     * @param start time to set
      */
     public void setStart(LocalTime start) {
         this.start = start;
@@ -117,7 +130,7 @@ public class CalendarEvent {
     }
     /**
      * Sets Event end Time
-     * @param end
+     * @param end end to set
      */
     public void setEnd(LocalTime end) {
         this.end = end;
@@ -125,7 +138,7 @@ public class CalendarEvent {
 
     /**
      * Gets Event text
-     * @return text
+     * @return event text
      */
     public String getText() {
         return text;
@@ -133,7 +146,7 @@ public class CalendarEvent {
     
     /**
      * Sets new Text for Event
-     * @param text
+     * @param text text to set
      */
     public void setText(String text) {
         this.text = text;
@@ -146,17 +159,10 @@ public class CalendarEvent {
         return getUser() + " " + getDate() + " " + getStart() + "-" + getEnd() + ". " + getText();
     }
     
-    /**
-     * Set the new Color for event
-     * @param color
-     */
-    public void setColor(Color color) {
-    	this.color = color;
-    }
 
     /**
      * Gets the event color
-     * @return
+     * @return the event color
      */
     public Color getColor() {
         return color;
@@ -184,7 +190,7 @@ public class CalendarEvent {
     }
 
     /**
-     * Adds Event to a json file and export fuul document to DB
+     * Adds Event to a json file and export full document to DB
      * @throws IOException
      */
 	public void addToJson() throws IOException {

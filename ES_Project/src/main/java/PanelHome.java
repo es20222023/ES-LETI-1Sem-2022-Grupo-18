@@ -2,12 +2,17 @@ import javax.swing.JPanel;
 import javax.swing.JLabel;
 import java.awt.Color;
 import java.awt.Font;
-
+/**
+ * 
+ * Class to create new Panel Home
+ *
+ */
 public class PanelHome extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
+	
 	public PanelHome() {
 		setBackground(new Color(255, 255, 255));
 		setSize(551,433);

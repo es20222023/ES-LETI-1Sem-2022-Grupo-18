@@ -13,34 +13,24 @@ public class WeekCalendar extends Calendar {
 
     /**
      * Crates week calendar
-     * @param events
+     * @param events events list
      */
     public WeekCalendar(ArrayList<CalendarEvent> events) {
         super(events);
         week = new Week(LocalDate.now());
     }
 
-    /**
-     * Checks if date is in range
-     * @param date
-     * @return boolean
-     */
     @Override
     public boolean dateInRange(LocalDate date) {
         return Week.getStartOfWeek(date).equals(week.getDay(DayOfWeek.MONDAY));
     }
 
     @Override
-    /**
-     * Gets the date from day
-     */
     protected LocalDate getDateFromDay(DayOfWeek day) {
         return week.getDay(day);
     }
 
-    /**
-     * Gets the number of days to show
-     */
+    @Override
     protected int numDaysToShow() {
         return 7;
     }

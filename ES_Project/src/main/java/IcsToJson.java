@@ -26,7 +26,7 @@ public class IcsToJson {
 	//Constructor
 	/**
 	 * Creates new Class
-	 * @param link
+	 * @param link link to connect
 	 * @throws MalformedURLException
 	 */
 	public IcsToJson(String link) throws MalformedURLException {
@@ -36,7 +36,7 @@ public class IcsToJson {
 	//Get json from ics file
 	/**
 	 * Gets the json from url and returns a file with it
-	 * @param user
+	 * @param user user
 	 * @return A file with json 
 	 * @throws IOException
 	 */
@@ -100,8 +100,8 @@ public class IcsToJson {
 	//List Event from a user
 	/**
 	 * Lists the events from a user
-	 * @param user
-	 * @return
+	 * @param user user
+	 * @return list of events
 	 * @throws FileNotFoundException
 	 */
 	public ArrayList<Event> listEvents(String user) throws FileNotFoundException {
