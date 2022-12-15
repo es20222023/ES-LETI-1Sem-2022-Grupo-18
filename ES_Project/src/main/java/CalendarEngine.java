@@ -1,6 +1,7 @@
 import javax.swing.*;
 import com.itextpdf.text.DocumentException;
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.text.ParseException;
@@ -37,10 +38,12 @@ public class CalendarEngine {
 		
 		// Creating main frame
 		JFrame frm = new JFrame();
+
 		// Adding events to events list by user
 		for (User u : users) {
 			events.addAll(u.getCalendarEventList());
 		}
+	
 
 		// Create new week calendar w/ event list
 		cal = new WeekCalendar(events);
@@ -174,14 +177,8 @@ public class CalendarEngine {
 		JLabel label = new JLabel("Selecione o utilizador para o qual pretende marcar um evento");
 		JButton ok = new JButton("Ok");
 		JButton cancelar = new JButton("Cancelar");
-		String userName = (String) combo.getSelectedItem();
-		User us = null;
-		for (User u : users) {
-			if (u.getUserName().equals(userName))
-				us = u;
-		}
-		final User user2 = us;
-		ok.addActionListener(e -> newEventFrame(user2));
+		//String userName = (String) combo.getSelectedItem();
+		ok.addActionListener(e -> newEventFrame(combo));
 		ok.addActionListener(e -> chooseUser.dispose());
 		cancelar.addActionListener(e -> chooseUser.dispose());
 		buttons.add(ok);
@@ -199,7 +196,14 @@ public class CalendarEngine {
 	 * Function that will open a new frame to give new event informations
 	 * @param user User to create a new Event Frame
 	 */
-	public void newEventFrame(User user) {
+	public void newEventFrame(JComboBox<String> cb) {
+		User us = null;
+		for (User u : users) {
+			if (u.getUserName().equals(cb.getSelectedItem()))
+				us = u;
+		}
+		final User user = us;
+		System.out.println(user);
 		String dates[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17",
 				"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" };
 		String months[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };

@@ -7,10 +7,12 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.Normalizer;
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 /**
  * Represents a single Calendar Event that later can be added to 
@@ -192,22 +194,24 @@ public class CalendarEvent {
     /**
      * Adds Event to a json file and export full document to DB
      * @throws IOException
+     * @throws ParseException 
      */
-	public void addToJson() throws IOException {
+	public void addToJson() throws IOException, ParseException {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
 		LocalDateTime ldtStart = LocalDateTime.of(getDate(), getStart());
 		LocalDateTime ldtEnd = LocalDateTime.of(getDate(), getEnd());
 		String dateStart = ldtStart.format(formatter);
 		String dateEnd = ldtEnd.format(formatter);
+		ArrayList<Event> events = user.getEventListFromFile();
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		Event e = new Event(getText(), dateStart, dateEnd, getUser().getUserName());
-		String json = gson.toJson(e);
+		Event e = new Event(getText(), dateStart, dateEnd, user.getUserName());
+		events.add(e);
+		String json = gson.toJson(events);
 		String s = getUser().getUserName().toLowerCase();
 		String fileName = Normalizer.normalize(s, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "") + ".json";
 		FileWriter writer = new FileWriter(fileName, true);
-		BufferedWriter out = new BufferedWriter(writer);
-		out.write(json);
-		out.close();
+		writer.write(json);
+		writer.close();
 		MongoDB.importData(fileName);
 	}
 	

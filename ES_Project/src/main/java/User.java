@@ -94,7 +94,7 @@ public class User {
 	 * @throws IOException
 	 */
 	public ArrayList<Event> getEventListFromFile() throws ParseException, IOException {
-		return FillCalendar.returnEventListFromFile(this.userFile, this.userName);
+		return FillCalendar.returnEventListFromFile(this.userFile.getName(), this.userName);
 	}
 
 	/**
