@@ -6,7 +6,7 @@ André Oliveira, nº 98412
 Madalena Jorge, nº 98666
 Alexandra Monteiro, nº 98632
 
-Quanto às funcionalidades, a única que não conseguimos desenvolver foi as sobreposições de eventos.
+Quanto às funcionalidades, a única que não conseguimos desenvolver foi as sobreposições de eventos. A funcionalidade que adicona um novo evento contem um bug, que, apesar de atualizar a base dados, não é possivel visualizar os eventos criados anteriormente.
 
 IMPORTANTE
 Para aceder à aplicação:
